@@ -121,6 +121,38 @@ These are the canonical signature/expendable decoy systems — the backbone of t
 - `CSIS-PENAIDS` - [Countermeasures, Penetration Aids, and Missile Defense](https://missilethreat.csis.org/countermeasures-penetration-aids-and-missile-defense/), CSIS Missile Threat. Tier A.
 - `GS-MIDCOURSE` - [Mid-Course Phase](https://www.globalsecurity.org/space/systems/mid-course.htm), GlobalSecurity.org. Tier B/C. (Discrimination problem; MIT Countermeasures report.)
 
+## Cyber Deception
+
+The cyber-domain decoy branch — honeypots, honeytokens, deception networks, and frameworks. Full chapter in [`docs/cyber-decoys.md`](../docs/cyber-decoys.md).
+
+### Frameworks and doctrine
+
+- `MITRE-ENGAGE` - [MITRE Engage](https://engage.mitre.org/), MITRE (FFRDC). Tier A. (Replaced MITRE Shield in 2022; maps to ATT&CK.)
+- `MITRE-ENGAGE-NEWS` - [MITRE Launches Engage Framework](https://www.mitre.org/news-insights/news-release/mitre-launches-engage-framework-defend-against-cyber-attacks), MITRE. Tier A.
+- `MITRE-D3FEND` - [MITRE D3FEND](https://d3fend.mitre.org/), MITRE. Tier A. (Defensive techniques incl. explicit decoy techniques.)
+- `HONEYNET-PROJECT` - [The Honeynet Project](https://www.honeynet.org/), nonprofit research community. Tier A.
+
+### Honeytokens and commercial deception
+
+- `CANARYTOKENS` - [Canarytokens](https://canarytokens.org/), Thinkst. Tier A. (Hosted honeytoken generator; self-hostable.)
+- `THINKST-CANARY` - [Thinkst Canary](https://canary.tools/), Thinkst. Tier A.
+- `ZSCALER-ENGAGE` - [Active Defense with MITRE Engage](https://www.zscaler.com/blogs/product-insights/active-defense-mitre-engage), Zscaler. Tier B.
+- `SMOKESCREEN-OSS` - [Practical Honeypots: Open-Source Deception Tools](https://www.smokescreen.io/practical-honeypots-a-list-of-open-source-deception-tools-that-detect-threats-for-free/), Smokescreen (now Zscaler). Tier C. (Incl. DCEPT AD decoy credentials.)
+- `SECURITYHIVE-HONEYPOTS` - [Best Honeypot Solutions in 2025](https://www.securityhive.io/blog/best-honeypot-solutions-in-2025), SecurityHive. Tier C.
+
+### Open-source honeypot tooling
+
+- `TPOT-GH` - [T-Pot multi-honeypot platform](https://github.com/telekom-security/tpotce), Deutsche Telekom Security. Tier A.
+- `COWRIE-GH` - [Cowrie SSH/Telnet honeypot](https://github.com/cowrie/cowrie). Tier A.
+- `DIONAEA-GH` - [Dionaea honeypot](https://github.com/DinoTools/dionaea). Tier A.
+- `CONPOT-GH` - [Conpot ICS/SCADA honeypot](https://github.com/mushorg/conpot). Tier A.
+- `OPENCANARY-GH` - [OpenCanary](https://github.com/thinkst/opencanary), Thinkst. Tier A.
+- `AWESOME-HONEYPOTS` - [awesome-honeypots](https://github.com/paralax/awesome-honeypots), community catalog. Tier A.
+
+### Historical
+
+- `WIKI-CUCKOO` - [The Cuckoo's Egg](https://en.wikipedia.org/wiki/The_Cuckoo%27s_Egg_(book)), Wikipedia. Tier C. (Clifford Stoll, 1989; SDInet decoy documents.)
+
 ## Recent Conflict Decoy and Saturation Cases (2020-2026)
 
 ### Nagorno-Karabakh 2020 (An-2 bait drones / SEAD by decoy)

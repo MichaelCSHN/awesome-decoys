@@ -21,7 +21,7 @@ and keeps source keys consistent with [`data/cases.csv`](../data/cases.csv).
 
 `peer_reviewed_journal`, `conference_paper`, `book`, `think_tank_report`,
 `gov_military_official`, `military_professional_journal`, `trade_defense_media`,
-`news_media`, `vendor_industry`, `analysis_blog`, `reference_encyclopedic`, `osint_social`,
+`news_media`, `vendor_industry`, `analysis_blog`, `reference_encyclopedic`, `software_repo`, `osint_social`,
 `dataset_database`, `institutional_reference`, `standard_patent_spec`.
 
 Definitions and Chinese glosses are maintained in [`docs/taxonomy.md`](taxonomy.md),

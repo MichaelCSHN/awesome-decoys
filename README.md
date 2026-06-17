@@ -18,6 +18,7 @@
 - [Inflatable and Physical Decoys](#inflatable-and-physical-decoys)
 - [Active and Autonomous Decoys](#active-and-autonomous-decoys)
 - [Electromagnetic and Multi-Spectral Deception](#electromagnetic-and-multi-spectral-deception)
+- [Cyber Decoys (Honeypots, Honeytokens, Deception)](#cyber-decoys-honeypots-honeytokens-deception)
 - [Aircraft and Airbase Decoys](#aircraft-and-airbase-decoys)
 - [Armored Vehicle and Artillery Decoys](#armored-vehicle-and-artillery-decoys)
 - [Industry and Vendors](#industry-and-vendors)
@@ -268,6 +269,23 @@ The throughline is an arms race against the seeker: each decoy works until the s
 - [Seawolf Marine F-35 Decoy - Chosun Biz](https://biz.chosun.com/en/en-industry/2025/10/03/KHVUVUJHANEXHGELA7EZOPDXT4/) - Korean business media coverage of the F-35 inflatable decoy.
 - [Synthetic Aperture Radar: Detecting Russian Inflatable Decoys with SAR](https://syntheticapertureradar.com/detecting-russian-inflatable-decoys-with-sar/) - Useful for understanding the counter-detection side of decoys and SAR interpretation.
 
+## Cyber Decoys (Honeypots, Honeytokens, Deception)
+
+The cyber-domain branch of decoys. The full chapter is in [`docs/cyber-decoys.md`](docs/cyber-decoys.md); cases use the `CYBER-` keys in [`data/cases.csv`](data/cases.csv).
+
+A cyber decoy is a host, service, account, file, credential, or token whose only purpose is to be touched by the wrong person, so that any interaction is a high-confidence intrusion signal. The same logic as a physical decoy — cheap to deploy, expensive to evade, and an arms race against an adversary who learns to fingerprint it.
+
+The decoy ladder runs by interaction depth: **honeytokens** (single bait data items) -> **low-interaction honeypots** (emulated services) -> **high-interaction honeypots** (real OS/services) -> **honeynets** (networks of the above) -> **distributed deception platforms** (enterprise-wide decoys plus breadcrumbs).
+
+- [MITRE Engage](https://engage.mitre.org/) - adversary-engagement framework (replaced MITRE Shield in 2022); maps to ATT&CK.
+- [MITRE D3FEND](https://d3fend.mitre.org/) - defensive techniques including explicit decoy techniques.
+- [The Honeynet Project](https://www.honeynet.org/) - the long-running nonprofit honeypot research community.
+- [Canarytokens](https://canarytokens.org/) - free honeytoken generator (Thinkst); the data-level tripwire.
+- [T-Pot](https://github.com/telekom-security/tpotce) - all-in-one platform bundling 20+ open-source honeypots; with [Cowrie](https://github.com/cowrie/cowrie) (SSH/Telnet), [Dionaea](https://github.com/DinoTools/dionaea) (malware collection), and [Conpot](https://github.com/mushorg/conpot) (ICS/SCADA).
+- [awesome-honeypots](https://github.com/paralax/awesome-honeypots) - community catalog of the wider tool ecosystem.
+
+Historical anchors: Clifford Stoll's *The Cuckoo's Egg* (1986-87, fake "SDInet" decoy documents), Cheswick's "An Evening with Berferd" (1991), and Fred Cohen's Deception Toolkit (1998). Commercial deception technology has consolidated into platforms such as SentinelOne Singularity Identity (ex-Attivo), Proofpoint Shadow (ex-Illusive), and Zscaler Deception (ex-Smokescreen) — treat vendor effectiveness claims with the same caution as physical-decoy vendors.
+
 ## Aircraft and Airbase Decoys
 
 - [Sea Wolf Global F-35 Jet Fighter Decoy System](https://www.seawolfglobal.com/dni/product_f35.html) - Aircraft-shaped decoy with public performance categories.
@@ -462,7 +480,7 @@ Extracted text is available in:
 - [x] Add airbase survivability resources: Agile Combat Employment, dispersed operations, hardening vs. deception.
 - [x] Add source-quality tiers and a dedicated source index.
 - [ ] Expand pre-modern and ancient deception cases.
-- [ ] Add cyber deception cases: honeypots, honeytokens, deception networks, fake identities, and bogus data.
+- [x] Add cyber deception branch (`docs/cyber-decoys.md`): honeypots, honeytokens/canarytokens, deception platforms, AD/identity decoys, ICS honeypots, MITRE Engage/D3FEND, and honeypot fingerprinting.
 - [ ] Expand counter-decoy resources: SAR detection, AI image recognition, thermal anomaly detection, pattern-of-life analysis.
 - [ ] Add market and vendor map: Sea Wolf, INFLATECH, Rusbal, i2k, Saab Barracuda, HDT Global, others.
 - [ ] Create a taxonomy figure: static mockup -> inflatable decoy -> multi-spectral decoy -> active/autonomous decoy -> deception network.

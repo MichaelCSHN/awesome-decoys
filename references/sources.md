@@ -29,6 +29,16 @@ The structured, queryable classification of every key below — by `source_type`
 
 ## Historical Deception Cases
 
+### Pre-modern and World-War decoys
+
+- `HISTENG-QSHIPS` - [Wartime Maritime Innovation (Q-Ships)](https://historicengland.org.uk/research/current/discover-and-understand/military/first-world-war-home-front/sea/wartime-maritime-innovation/), Historic England. Tier A.
+- `SMITHSONIAN-QSHIPS` - [How Britain's Secret Decoy Ships Outfoxed German U-Boats](https://www.smithsonianmag.com/history/how-britains-secret-decoy-ships-outfoxed-german-u-boats-during-world-war-i-180986044/), Smithsonian Magazine. Tier B.
+- `IWM-DAZZLE` - [Dazzle Ships](https://www.iwm.org.uk/partnerships/mapping-the-centenary/projects/dazzle-ships), Imperial War Museums. Tier A. (Adjacent: confuse-not-conceal camouflage.)
+- `NWW2M-GHOST` - [Ghost Army: The Combat Con Artists of WWII](https://www.nationalww2museum.org/visit/exhibits/traveling-exhibits/ghost-army-combat-con-artists-world-war-ii), The National WWII Museum. Tier A.
+- `LIVESCI-GHOST` - [Ghost Army used inflatable tanks to fool the Nazis](https://www.livescience.com/wwii-ghost-army.html), Live Science. Tier B.
+- `ATLASOBSCURA-GHOST` - [A Visual Guide to the Ghost Army](https://www.atlasobscura.com/articles/wwii-ghost-army), Atlas Obscura. Tier C. (Also Starfish sites and dummy airfields.)
+- `COLLECTOR-GHOST` - [The Ghost Army: Masters of Deception in WWII](https://www.thecollector.com/ghost-army-masters-deception-wwii/), TheCollector. Tier C. (Also Starfish and Operation Mincemeat.)
+
 - `IWM-FORTITUDE` - [D-Day Deception: Parachuting Dummies and Inflatable Tanks](https://www.iwm.org.uk/history/second-world-war/d-day/parachuting-dummies-and-inflatable-tanks), Imperial War Museums.
 - `ENGLISH-HERITAGE-FORTITUDE` - [D-Day Deception: Operation Fortitude South](https://www.english-heritage.org.uk/visit/places/dover-castle/history-and-stories/d-day-deception/), English Heritage.
 - `AUP-FORTRESS-EUROPE` - [Assault on Fortress Europe](https://www.armyupress.army.mil/Journals/Military-Review/Online-Exclusive/2020-OLE/Carminati-Assault-Fortress-Europe/), Army University Press.

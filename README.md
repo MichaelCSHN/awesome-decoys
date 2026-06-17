@@ -115,6 +115,8 @@ This project organizes dummy/decoy systems along several dimensions:
 
 The initial case database is available at [`data/cases.csv`](data/cases.csv). It is structured for later import into Excel, SQLite, Notion, or a small static site.
 
+An interactive, offline, self-contained browser for all cases — filter by category, source tier, and era, with full-text search — is at [`assets/cases-explorer.html`](assets/cases-explorer.html) (open it in any browser).
+
 Core fields:
 
 - `case_id` - Stable case identifier.
@@ -134,6 +136,10 @@ Initial cases:
 
 | Case | Period | Focus | Why It Matters |
 |---|---:|---|---|
+| Ancient and classical ruses | antiquity | Dummy camps, feigned retreats, the Trojan Horse archetype | Shows the decoy logic — manufacturing a false belief — long before sensors and precision fires. |
+| Q-ships | 1915-1918 | Disguised armed merchantmen baiting U-boats | Naval decoy ancestor; deception plus staged behavior ("panic party"). |
+| WWII Starfish sites and dummy airfields | 1940-1944 | Decoy fires/lights and dummy airfields in the Blitz | Early state-organized decoy program drawing bomb tonnage onto empty ground. |
+| The Ghost Army (23rd HQ Special Troops) | 1944-1945 | Inflatable tanks, sonic deception, fake radio, impersonation | Multi-cue consistency exemplar; the model for modern multi-spectral decoys. |
 | Operation Fortitude South | 1944 | False army, dummy landing craft, radio traffic, double agents | Classic example of physical, signals, and human-source deception reinforcing one false operational story. |
 | Desert Storm deception | 1990-1991 | Amphibious feint, force posture deception, false attack expectation | Shows deception integrated with maneuver and operational design rather than isolated decoy objects. |
 | Desert Storm Scud hunt | 1991 | Mobile missile TEL ambiguity and decoy/similar-vehicle problem | Demonstrates how mobile false targets and uncertainty can consume disproportionate ISR and strike effort. |
@@ -331,6 +337,8 @@ A note on the AI layer: automated target recognition discriminates decoys at mac
 
 > Inclusion here is not endorsement. These are useful public references for market mapping and capability taxonomy.
 
+A cross-domain, structured vendor map is in [`data/vendors.csv`](data/vendors.csv), with notes and caveats in [`docs/vendors.md`](docs/vendors.md) — spanning inflatable/physical makers, active/autonomous, signal/EW primes (Raytheon, BAE, L3Harris), camouflage/signature (Saab Barracuda, HDT), and cyber-deception vendors. Note: published inflatable-decoy market-size figures are contradictory and one syndicated report conflates military with hunting decoys, so no single figure is treated as authoritative.
+
 - [Sea Wolf Global](https://seawolf502.cafe24.com/shop3/) - South Korean inflatable decoy systems, including aircraft and rocket-artillery concepts.
 - [Sea Wolf F-35 Decoy](https://www.seawolfglobal.com/dni/product_f35.html) - Public F-35 decoy page.
 - [INFLATECH](https://www.inflatechdecoy.com/) - Czech high-end inflatable military decoy producer.
@@ -342,7 +350,7 @@ A note on the AI layer: automated target recognition discriminates decoys at mac
 
 ## Autonomous Decoy Aircraft System
 
-This project treats an Autonomous Decoy Aircraft System (ADAS) as a specialized branch of active decoys for airbase survivability and distributed aviation operations.
+This project treats an Autonomous Decoy Aircraft System (ADAS) as a specialized branch of active decoys for airbase survivability and distributed aviation operations. The full deep-dive — operational problem, multi-spectral credibility stack, autonomy levels, cost-exchange model, counter-decoy resilience, evaluation plan, and risks — is in [`docs/adas.md`](docs/adas.md).
 
 ### Operational Role
 
@@ -504,12 +512,13 @@ Extracted text is available in:
 - [x] Add the source-type / provenance dimension and a structured source index (`data/sources.csv`, `docs/source-schema.md`).
 - [x] Add airbase survivability resources: Agile Combat Employment, dispersed operations, hardening vs. deception.
 - [x] Add source-quality tiers and a dedicated source index.
-- [ ] Expand pre-modern and ancient deception cases.
+- [x] Add pre-modern and World-War deception cases: ancient ruses, WWI Q-ships, WWII Starfish/dummy airfields, the Ghost Army, Operation Mincemeat (with dazzle as adjacency).
 - [x] Add cyber deception branch (`docs/cyber-decoys.md`): honeypots, honeytokens/canarytokens, deception platforms, AD/identity decoys, ICS honeypots, MITRE Engage/D3FEND, and honeypot fingerprinting.
 - [x] Add the counter-decoy / discrimination branch (`docs/counter-decoy.md`): multi-spectral consistency, SAR/polarimetry, IR & Doppler discrimination, midcourse discrimination, pattern-of-life, AI/ATR adversarial robustness, multi-INT fusion.
-- [ ] Add market and vendor map: Sea Wolf, INFLATECH, Rusbal, i2k, Saab Barracuda, HDT Global, others.
-- [ ] Create a taxonomy figure: static mockup -> inflatable decoy -> multi-spectral decoy -> active/autonomous decoy -> deception network.
-- [x] Create a dedicated section for Autonomous Decoy Aircraft System (ADAS).
+- [x] Add a cross-domain vendor/market map (`data/vendors.csv`, `docs/vendors.md`): inflatable, active, signal/EW, naval, camouflage, and cyber-deception vendors, with market-figure caveats.
+- [x] Build an interactive, offline case explorer (`assets/cases-explorer.html`) filterable by category, source tier, and era.
+- [ ] Create a static taxonomy figure: static mockup -> inflatable -> multi-spectral -> active/autonomous -> deception network.
+- [x] Create a dedicated Autonomous Decoy Aircraft System (ADAS) deep-dive chapter (`docs/adas.md`).
 - [ ] Convert the list into a GitHub-style repository structure with `README.md`, `data/`, `papers/`, `vendors/`, and `cases/`.
 
 ## Suggested Repository Structure
@@ -527,6 +536,7 @@ awesome-decoys/
     case-schema.md
     source-schema.md
     adas.md
+    vendors.md
     airbase-survivability.md
     cyber-decoys.md
     counter-decoy.md
@@ -535,6 +545,7 @@ awesome-decoys/
     modern-conflicts.md
     industry.md
   assets/
+    cases-explorer.html
     taxonomy.drawio
     roadmap.png
 ```

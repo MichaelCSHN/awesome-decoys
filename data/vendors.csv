@@ -1,0 +1,23 @@
+vendor_key,name,country,category,products,status,url,notes
+INFLATECH,Inflatech,Czechia,inflatable_physical,"Inflatable tanks, HIMARS/MLRS, aircraft, radars, trucks, artillery","active",https://www.inflatechdecoy.com/,High-end inflatable decoys with thermal/radar signature claims; widely cited re: Ukraine demand
+SEAWOLF,Sea Wolf Global,South Korea,inflatable_physical,"Inflatable aircraft decoys (F-35 and others)","active",https://www.seawolfglobal.com/,Rapidly deployable inflatable F-35 decoy with IR/radar-reflector claims
+I2K,i2k Defense / i2k Military,United States,inflatable_physical,"Inflatable replicas incl. Russian systems (T-72, S-400, Pantsir, etc.)","active",https://i2kdefense.com/,US veteran-owned; 25+ years of inflatable manufacturing
+NORSESTORM,NorseStorm,Distributor,inflatable_physical,"Inflatable decoy distribution (tanks, radars, launchers, aircraft, naval)","active",https://www.norsestorm.com/,Distributor/reference for inflatable decoy categories
+RUSBALT,JSC SPE Rusbalt (Rusbal),Russia,inflatable_physical,"Inflatable land and naval decoys","active",,Russian inflatable-decoy maker frequently listed in market reports; verify URL
+ATL,Aero Tec Laboratories (ATL),United States / UK,inflatable_physical,"Lightweight rugged inflatable military decoys","active",,Reported 2023 launch of portable rapid-deploy decoys; verify URL
+AIRBORNE-IND,Airborne Industries,United Kingdom,inflatable_physical,"Inflatable decoys and targets","active",,Listed across inflatable-decoy market reports; verify URL
+MAGAM,Magam Safety,Israel,inflatable_physical,"Inflatable decoys","active",,Listed in market reports; verify URL
+SHAPE-INFLATABLE,Shape Inflatable Manufacturing,China,inflatable_physical,"Inflatable decoys","active",,Listed in market reports; verify URL
+TEMERLAND,Temerland,Ukraine,active_autonomous,"Mobile/remote-controlled active vehicle decoys (Leopard concept)","active",https://temerland.com/,Adds movement/behavior to a vehicle-based dummy
+RAYTHEON,Raytheon (RTX),United States,signal_ew,"ADM-160 MALD / MALD-J air-launched decoys","active",https://www.rtx.com/,Maker of the MALD family
+BAE,BAE Systems,UK / Australia / US,"signal_ew","Nulka active naval decoy; AN/ALE-55 fiber-optic towed decoy","active",https://www.baesystems.com/,Spans naval and airborne RF decoys
+L3HARRIS,L3Harris,United States,naval_decoy,"Nulka rocket motor and decoy electronics","active",https://www.l3harris.com/,Nulka production partner
+BRUNSWICK-IMI,Brunswick / IMI (now part of Elbit),United States / Israel,signal_ew,"ADM-141 TALD/ITALD; 'Samson' decoy","legacy",,Originated TALD/Samson; historical
+SAAB-BARRACUDA,Saab Barracuda,Sweden,camouflage_signature,"Multispectral camouflage, mobile camouflage systems, signature management, decoys","active",https://www.saab.com/,Signature-management adjacency (camouflage + some decoy products)
+HDT,HDT Global,United States,camouflage_signature,"Expeditionary and inflatable systems; signature management","active",https://www.hdtglobal.com/,Expeditionary/inflatable systems; verify specific decoy lines
+THINKST,Thinkst,South Africa,cyber_deception,"Canary appliance; Canarytokens honeytokens; OpenCanary","active",https://canary.tools/,Honeypot/honeytoken vendor and open-source maintainer
+SENTINELONE,"SentinelOne (Singularity Identity, ex-Attivo)",United States,cyber_deception,"Identity and endpoint deception (decoys, breadcrumbs)","active",https://www.sentinelone.com/,Acquired Attivo Networks
+PROOFPOINT,Proofpoint Shadow (ex-Illusive),United States,cyber_deception,"Identity-focused deception and lateral-movement detection","active",https://www.proofpoint.com/,Acquired Illusive Networks
+ZSCALER,Zscaler Deception (ex-Smokescreen),United States,cyber_deception,"Distributed deception platform (IllusionBLACK lineage)","active",https://www.zscaler.com/,Acquired Smokescreen
+ACALVIO,Acalvio,United States,cyber_deception,"ShadowPlex distributed deception","active",https://www.acalvio.com/,Distributed deception platform
+FORTINET,Fortinet (FortiDeceptor),United States,cyber_deception,"FortiDeceptor decoys and lures","active",https://www.fortinet.com/,Deception appliance/VM

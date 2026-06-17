@@ -20,10 +20,10 @@ For a case to be considered well-supported:
 
 | Priority | Area | Current weakness | Source target |
 |---|---|---|---|
-| P0 | Recent single-outlet claims | `CONCEPT-2026-LUCAS-EPICFURY` still depends on one recent article | Find official statements, exercise/operation records, procurement traces, or at least two independent defense-media confirmations |
+| P0 | Recent LUCAS / Epic Fury claims | Official and specialist anchors are now present, but the exact decoy/saturation role is still under-corroborated | Add more official after-action detail, procurement traces, imagery analysis, or independent defense-media confirmation of LUCAS employment as decoy/saturation rather than only one-way attack |
 | P0 | Russia-Ukraine decoy combat effects | Strike counts, destroyed-decoy claims, and BDA remain media-reported | Add geolocated OSINT threads only when archived and independently checked; prefer official Ukrainian/Russian statements plus independent imagery analysis |
 | P1 | WWII Starfish sites | `HIST-WWII-STARFISH` still leans on secondary visual articles | Add UK National Archives, Historic England, IWM, or official civil-defense histories |
-| P1 | Houthi Red Sea decoys | Ground-decoy and launcher-survivability claims are indirect | Add CENTCOM, UKMTO, US Navy, CRS/GAO, IISS, RUSI, or CSIS Missile Defense sources |
+| P1 | Houthi Red Sea decoys | Threat inventory and cost-exchange are now better anchored; ground-decoy and launcher-survivability claims remain indirect | Add UKMTO, US Navy, CRS/GAO, IISS, RUSI, imagery analysis, or official after-action sources on launchers, decoys, and strike effectiveness |
 | P1 | Counter-decoy IR and multispectral discrimination | Some method cases still use broad explainers | Add SPIE/IEEE/DTIC/NATO STO papers on imaging-IR seeker discrimination, multispectral target recognition, and SAR/EO fusion |
 | P1 | Space decoys and counter-decoy discrimination | Existing space coverage is mostly ballistic-missile midcourse penaids | Add missile-defense discrimination, satellite decoy/proximity-operation, space-domain-awareness, and inflatable/reflector target sources from MDA, GAO, CRS, CSIS, RAND, IAC/AIAA, and peer-reviewed astrodynamics literature |
 | P1 | Underwater decoys and unmanned undersea systems | Nixie is present, but underwater soft-kill, acoustic countermeasure, and UUV decoy coverage is thin | Add naval torpedo-defense manuals, NATO STO/ONR papers, vendor specs, and research on mobile acoustic decoys, expendable bathythermograph-like devices, and UUV false targets |

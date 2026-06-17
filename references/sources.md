@@ -201,6 +201,7 @@ The cyber-domain decoy branch — honeypots, honeytokens, deception networks, an
 - `EUROMAIDAN-MASTERS-ILLUSION` - [Masters of illusion: Ukraine's decoy makers outwit Russia](https://euromaidanpress.com/2024/03/13/masters-of-illusion-ukraines-decoy-makers-outwit-russia/), Euromaidan Press. Tier C.
 - `ARMYRECOG-FORTITUDE` - [Ukraine's mastery of decoy warfare](https://www.armyrecognition.com/focus-analysis-conflicts/army/conflicts-in-the-world/russia-ukraine-war-2022/analysis-ukraine-s-mastery-of-decoy-warfare-named-fortitude), Army Recognition. Tier C.
 - `USNI-DECOY-WARFARE-UKRAINE` - [Decoy Warfare: Lessons and Implication from the War in Ukraine](https://www.usni.org/magazines/proceedings/2024/april/decoy-warfare-lessons-and-implication-war-ukraine), U.S. Naval Institute Proceedings. Tier A/B. (Russian inert cruise-missile/drone decoys, inflatable command posts, painted Tu-95 at Engels, decoy balloons.)
+- `AP-FALSE-TARGET` - [Secretive US drone program called False Target helped Ukraine destroy Russian air defense systems](https://apnews.com/article/2f904b04fcc5de17549415a974f5a92b), Associated Press. Tier B. Investigative reporting on US-backed decoy drones in Ukraine.
 
 ### Iran-Israel and US-Israel-Iran (saturation, penetration aids, cost-exchange)
 
@@ -211,6 +212,9 @@ The cyber-domain decoy branch — honeypots, honeytokens, deception networks, an
 
 ### Houthi / Red Sea cost-exchange
 
+- `DIA-HOUTHI-IRAN` - [Seized at Sea: Iranian Weapons Smuggled to the Houthis](https://www.dia.mil/Portals/110/Documents/News/Military_Power_Publications/Iran_Houthi_Final2.pdf), Defense Intelligence Agency. Tier A. Official evidence package for Houthi missile/UAV inventory and Iranian support.
+- `CSIS-COST-VALUE-AMD` - [The Cost and Value of Air and Missile Defense Intercepts](https://www.csis.org/analysis/cost-and-value-air-and-missile-defense-intercepts), CSIS. Tier A. Cost/value framing for interceptor use and Red Sea-type missile-defense exchanges.
+- `CENTCOM-HOUTHI-TARGETS` - [USCENTCOM forces continue to target Houthi terrorists](https://www.centcom.mil/MEDIA/PRESS-RELEASES/Press-Release-View/Article/4167047/uscentcom-forces-continue-to-target-houthi-terrorists/), U.S. Central Command. Tier A. Official strike/tactical-pressure context.
 - `NEWLINES-HOUTHI-DRONES` - [Cheap Houthi Drones Are Draining the Pentagon's Coffers](https://newlinesmag.com/argument/cheap-houthi-drones-are-draining-the-pentagons-coffers/), New Lines Magazine. Tier B.
 - `NATIONAL-CHEAP-DRONES` - [Drones get cheaper and deadlier as armies race for low-cost defences](https://www.thenationalnews.com/news/mena/2025/01/23/drones-get-cheaper-and-deadlier-as-armies-race-for-low-cost-defences/), The National. Tier B.
 - `GEOPOL-DRONES-DOLLARS` - [Drones vs. Dollars: The Costly Calculus of U.S.-Houthi Warfare](https://geopoliticsunplugged.substack.com/p/drones-vs-dollars-the-costly-calculus), Geopolitics Unplugged. Tier C. (Operation Rough Rider; mobile launchers and decoy systems complicate targeting.)
@@ -218,6 +222,10 @@ The cyber-domain decoy branch — honeypots, honeytokens, deception networks, an
 
 ### Reversing the cost equation (US offensive decoys)
 
+- `CENTCOM-EPICFURY-FACTSHEET` - [Operation Epic Fury fact sheet](https://media.defense.gov/2026/Apr/01/2003905658/-1/-1/1/OPERATION-EPIC-FURY-FACT-SHEET-APRIL-1-UPDATE.PDF), U.S. Central Command. Tier A. Official operation anchor; use with specialist reporting for decoy role.
+- `CENTCOM-LUCAS-IMAGERY` - [LUCAS low-cost unmanned aerial systems launch](https://www.centcom.mil/MEDIA/IMAGERY/igphoto/2003834256/), U.S. Central Command. Tier A. Official imagery confirming LUCAS launch context.
+- `DEFENSESCOOP-EPICFURY` - [US launches more attack drones toward Iran under Operation Epic Fury](https://defensescoop.com/2026/04/07/us-launches-more-attack-drones-iran-epic-fury-adm-cooper-centcom/), DefenseScoop. Tier B.
+- `TWZ-LUCAS-HIVEMIND` - [U.S. military's LUCAS kamikaze drone is getting Hivemind swarming capability](https://www.twz.com/air/u-s-militarys-lucas-kamikaze-drone-is-getting-hivemind-swarming-capability), The War Zone. Tier B.
 - `DEFENSEINFO-EPICFURY-LUCAS` - [From Red Sea Defense to Epic Fury: How the U.S. Flipped the Drone Cost Equation](https://defense.info/featured-story/2026/03/from-red-sea-defense-to-epic-fury-how-the-u-s-flipped-the-drone-cost-equation/), Defense.info. Tier C. Single-outlet, recent; corroborate before formal citation.
 
 ## Notes for Future Updates

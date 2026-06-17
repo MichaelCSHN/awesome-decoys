@@ -1,5 +1,7 @@
 # Awesome Decoys / 假目标与诱饵大全
 
+[English](README.md) | [中文](README.zh-CN.md)
+
 > A curated knowledge base on dummy targets, decoys, deception systems, physical and signal decoys, cyber deception, multi-spectral signatures, active decoys, and autonomous attritable systems.
 >
 > 本项目面向“假目标/诱饵”建立公开资料层面的大全：覆盖古往今来的案例、实体/信号/网络形态、经典式/机械化/信息化/智能化演进，以及设计、制造、部署、测试和评估等技术环节。
@@ -11,6 +13,7 @@
 - [Reading Map](#reading-map)
 - [Case Database](#case-database)
 - [Source Quality Tiers](#source-quality-tiers)
+- [Chinese Edition](#chinese-edition)
 - [Doctrine and Concepts](#doctrine-and-concepts)
 - [Modern Battlefield Lessons](#modern-battlefield-lessons)
 - [Recent Conflicts (2020-2026)](#recent-conflicts-2020-2026)
@@ -42,7 +45,7 @@
 
 ## Scope and Taxonomy
 
-The full taxonomy is maintained in [`docs/taxonomy.md`](docs/taxonomy.md). The case-data schema is maintained in [`docs/case-schema.md`](docs/case-schema.md).
+The full taxonomy is maintained in [`docs/taxonomy.md`](docs/taxonomy.md). The case-data schema is maintained in [`docs/case-schema.md`](docs/case-schema.md). Chinese parallel documents are linked in [Chinese Edition](#chinese-edition).
 
 ![Generational evolution of decoy and deception, from classic manual ruses to intelligent autonomous systems, with representative cases colour-coded by feature dimension](assets/taxonomy-evolution.svg)
 
@@ -117,7 +120,7 @@ This project organizes dummy/decoy systems along several dimensions:
 
 The initial case database is available at [`data/cases.csv`](data/cases.csv). It is structured for later import into Excel, SQLite, Notion, or a small static site.
 
-An interactive, offline, self-contained browser for all cases — filter by category, source tier, and era, with full-text search — is at [`assets/cases-explorer.html`](assets/cases-explorer.html) (open it in any browser).
+An interactive, offline, self-contained browser for all cases — filter by category, source tier, and era, with full-text search — is at [`assets/cases-explorer.html`](assets/cases-explorer.html). If GitHub Pages is enabled, the browser is also available at [michaelcshn.github.io/awesome-decoys/assets/cases-explorer.html](https://michaelcshn.github.io/awesome-decoys/assets/cases-explorer.html).
 
 Core fields:
 
@@ -165,6 +168,21 @@ Initial cases:
 - **D - Unverified / social**: social media posts, videos, image-only claims, or claims that need independent confirmation.
 
 Use source tiering conservatively: a vendor page can be Tier A for product claims but not for independent effectiveness claims; media can be Tier B for reported observations but should not be treated as validated combat assessment without corroboration.
+
+## Chinese Edition
+
+The project now has a parallel Chinese edition for core entry points and topic guides:
+
+- [README.zh-CN.md](README.zh-CN.md) - Chinese project homepage.
+- [docs/taxonomy.zh-CN.md](docs/taxonomy.zh-CN.md) - Chinese taxonomy.
+- [docs/case-schema.zh-CN.md](docs/case-schema.zh-CN.md) - Chinese case schema.
+- [docs/source-schema.zh-CN.md](docs/source-schema.zh-CN.md) - Chinese source schema.
+- [docs/cyber-decoys.zh-CN.md](docs/cyber-decoys.zh-CN.md) - Chinese cyber decoy guide.
+- [docs/counter-decoy.zh-CN.md](docs/counter-decoy.zh-CN.md) - Chinese counter-decoy guide.
+- [docs/adas.zh-CN.md](docs/adas.zh-CN.md) - Chinese ADAS guide.
+- [docs/vendors.zh-CN.md](docs/vendors.zh-CN.md) - Chinese vendor map.
+- [data/README.zh-CN.md](data/README.zh-CN.md) - Chinese data-file guide.
+- [CONTRIBUTING.zh-CN.md](CONTRIBUTING.zh-CN.md) - Chinese contribution guide.
 
 ## Doctrine and Concepts
 
@@ -523,27 +541,44 @@ Extracted text is available in:
 - [x] Build an interactive, offline case explorer (`assets/cases-explorer.html`) faceted by feature, domain, generation, era, and source tier, with a live clickable counts overview.
 - [x] Create a static taxonomy evolution figure (`assets/taxonomy-evolution.svg`): classic -> mechanical -> informationized -> intelligent, with representative cases colour-coded by feature.
 - [x] Create a dedicated Autonomous Decoy Aircraft System (ADAS) deep-dive chapter (`docs/adas.md`).
-- [ ] Convert the list into a GitHub-style repository structure with `README.md`, `data/`, `papers/`, `vendors/`, and `cases/`.
+- [x] Add repository infrastructure: `LICENSE`, contribution guide, validation script, GitHub Actions data checks, and data-directory documentation.
+- [x] Add a parallel Chinese edition for the homepage and major topic guides.
+- [ ] Add archived URLs / access-status metadata for fragile external links.
+- [ ] Split the long README into a shorter landing page after the topic guides stabilize.
+- [ ] Enable and monitor GitHub Pages for the interactive case explorer.
 
 ## Suggested Repository Structure
 
 ```text
 awesome-decoys/
   README.md
+  README.zh-CN.md
+  CONTRIBUTING.md
+  CONTRIBUTING.zh-CN.md
+  LICENSE
   data/
+    README.md
+    README.zh-CN.md
     cases.csv
     sources.csv
     vendors.csv
     glossary.csv
   docs/
     taxonomy.md
+    taxonomy.zh-CN.md
     case-schema.md
+    case-schema.zh-CN.md
     source-schema.md
+    source-schema.zh-CN.md
     adas.md
+    adas.zh-CN.md
     vendors.md
+    vendors.zh-CN.md
     airbase-survivability.md
     cyber-decoys.md
+    cyber-decoys.zh-CN.md
     counter-decoy.md
+    counter-decoy.zh-CN.md
   references/
     doctrine.md
     modern-conflicts.md
@@ -557,4 +592,4 @@ awesome-decoys/
 
 ## License
 
-Suggested license for a public curated list: CC BY 4.0 or CC0 for the list metadata. Verify source licenses before redistributing copied content or images.
+Original list metadata, taxonomy text, schemas, and project notes are licensed under [CC BY 4.0](LICENSE). Third-party source material linked from this repository remains under the respective owners' licenses and terms.

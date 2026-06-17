@@ -1,5 +1,7 @@
 # Industry and Vendor Map / 厂商与市场图谱
 
+[English](vendors.md) | [中文](vendors.zh-CN.md)
+
 A cross-domain map of organizations that design and build decoys and deception systems, from
 inflatable physical decoys to RF/IR expendables, naval and airborne EW decoys, signature
 management, and cyber deception. The structured list is [`data/vendors.csv`](../data/vendors.csv).

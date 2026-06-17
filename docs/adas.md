@@ -1,5 +1,7 @@
 # Autonomous Decoy Aircraft System (ADAS) / 自主式假飞机系统专题
 
+[English](adas.md) | [中文](adas.zh-CN.md)
+
 This chapter develops the project's lead application: an **autonomous decoy aircraft system** for
 airbase survivability and distributed aviation operations. It is written to feed a concept/proposal
 (立项论证) and pulls together the rest of the library — the signal-decoy hardware lineage

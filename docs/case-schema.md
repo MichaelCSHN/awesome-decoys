@@ -1,5 +1,7 @@
 # Case Database Schema
 
+[English](case-schema.md) | [中文](case-schema.zh-CN.md)
+
 `data/cases.csv` is the seed case database. This schema defines the intended fields as the project grows from a small resource list into a full dummy/decoy encyclopedia.
 
 ## Current Core Fields

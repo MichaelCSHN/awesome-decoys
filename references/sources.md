@@ -26,6 +26,7 @@ The structured, queryable classification of every key below — by `source_type`
 - `WARROOM-EM-DECOYS` - [A Tool for Deception: The Urgent Need for EM Decoys](https://warroom.armywarcollege.edu/articles/tactical-decoys/), War Room / U.S. Army War College.
 - `WOTR-EMS-DECEPTION` - [Thinking Through Deception on the Electromagnetic Spectrum](https://warontherocks.com/thinking-through-deception-on-the-electromagnetic-spectrum/), War on the Rocks.
 - `DSIAC-DECOYS-US-MILITARY` - [An Overview of Decoys Used in the U.S. Military](https://dsiac.dtic.mil/wp-content/uploads/2023/09/TI-Response-Report_DSIAC_An-Overview-of-Decoys-Used-in-the-U.S.-Military_1162024.pdf), DSIAC.
+- `DEFENSESCOOP-EMS-DECOY` - [Army expects to mature electromagnetic spectrum decoy and obfuscation systems in FY '25](https://defensescoop.com/2024/03/22/army-electromagnetic-spectrum-decoy-obfuscation-systems-2025/), DefenseScoop. Tier B.
 
 ## Historical Deception Cases
 
@@ -116,6 +117,7 @@ These are the canonical signature/expendable decoy systems — the backbone of t
 - `ASF-MALD` - [ADM-160 MALD](https://www.airandspaceforces.com/weapons/adm-160-mald/), Air & Space Forces Magazine. Tier B.
 - `DSN-MALD` - [ADM-160A/B/C MALD](https://www.designation-systems.net/dusrm/m-160.html), Designation-Systems.net. Tier A/B.
 - `GS-MALD` - [ADM-160 Miniature Air-Launched Decoy (MALD)](https://www.globalsecurity.org/military/systems/aircraft/systems/mald.htm), GlobalSecurity.org. Tier B/C.
+- `WIKI-MOLE-CRICKET-19` - [Operation Mole Cricket 19](https://en.wikipedia.org/wiki/Operation_Mole_Cricket_19), Wikipedia. Tier C. Orientation source for decoy UAV and SEAD context; verify specifics in primary histories.
 
 ### Towed decoys (air)
 

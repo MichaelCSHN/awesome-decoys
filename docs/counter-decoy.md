@@ -1,5 +1,7 @@
 # Counter-Decoy and Discrimination / 反诱饵与鉴别
 
+[English](counter-decoy.md) | [中文](counter-decoy.zh-CN.md)
+
 Every branch of this project ends at the same place: a decoy works only until the observer learns
 to tell it apart from the real thing. This chapter is the capstone — it collects the discrimination
 methods that defeat decoys across domains and frames them as one **arms race** between decoy

@@ -1,5 +1,7 @@
 # Cyber Decoys / 网络诱饵
 
+[English](cyber-decoys.md) | [中文](cyber-decoys.zh-CN.md)
+
 Cyber deception is the cyber-domain branch of the same idea that runs through the rest of this
 project: build something — a host, a service, an account, a file, a credential, a token — whose
 **only purpose is to be touched by the wrong person**, so that any interaction with it is a

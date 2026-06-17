@@ -1,5 +1,7 @@
 # Source Database Schema
 
+[English](source-schema.md) | [中文](source-schema.zh-CN.md)
+
 `data/sources.csv` is the structured source index. It complements the human-readable
 [`references/sources.md`](../references/sources.md): the markdown file groups sources by topic
 for reading, while the CSV makes the **source-type** and **quality-tier** dimensions queryable

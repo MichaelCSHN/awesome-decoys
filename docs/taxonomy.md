@@ -1,5 +1,7 @@
 # 假目标/诱饵分类体系
 
+[English](taxonomy.md) | [中文](taxonomy.zh-CN.md)
+
 This taxonomy defines the top-level structure for an "awesome decoys" knowledge base. It intentionally covers military dummy targets, signal decoys, cyber deception, historical ruses, and future autonomous systems under one shared vocabulary.
 
 ## 1. Working Definition

@@ -44,6 +44,8 @@
 
 The full taxonomy is maintained in [`docs/taxonomy.md`](docs/taxonomy.md). The case-data schema is maintained in [`docs/case-schema.md`](docs/case-schema.md).
 
+![Generational evolution of decoy and deception, from classic manual ruses to intelligent autonomous systems, with representative cases colour-coded by feature dimension](assets/taxonomy-evolution.svg)
+
 This project organizes dummy/decoy systems along several dimensions:
 
 ### Time Dimension
@@ -518,8 +520,8 @@ Extracted text is available in:
 - [x] Add cyber deception branch (`docs/cyber-decoys.md`): honeypots, honeytokens/canarytokens, deception platforms, AD/identity decoys, ICS honeypots, MITRE Engage/D3FEND, and honeypot fingerprinting.
 - [x] Add the counter-decoy / discrimination branch (`docs/counter-decoy.md`): multi-spectral consistency, SAR/polarimetry, IR & Doppler discrimination, midcourse discrimination, pattern-of-life, AI/ATR adversarial robustness, multi-INT fusion.
 - [x] Add a cross-domain vendor/market map (`data/vendors.csv`, `docs/vendors.md`): inflatable, active, signal/EW, naval, camouflage, and cyber-deception vendors, with market-figure caveats.
-- [x] Build an interactive, offline case explorer (`assets/cases-explorer.html`) filterable by category, source tier, and era.
-- [ ] Create a static taxonomy figure: static mockup -> inflatable -> multi-spectral -> active/autonomous -> deception network.
+- [x] Build an interactive, offline case explorer (`assets/cases-explorer.html`) faceted by feature, domain, generation, era, and source tier, with a live clickable counts overview.
+- [x] Create a static taxonomy evolution figure (`assets/taxonomy-evolution.svg`): classic -> mechanical -> informationized -> intelligent, with representative cases colour-coded by feature.
 - [x] Create a dedicated Autonomous Decoy Aircraft System (ADAS) deep-dive chapter (`docs/adas.md`).
 - [ ] Convert the list into a GitHub-style repository structure with `README.md`, `data/`, `papers/`, `vendors/`, and `cases/`.
 
@@ -548,6 +550,7 @@ awesome-decoys/
     industry.md
   assets/
     cases-explorer.html
+    taxonomy-evolution.svg
     taxonomy.drawio
     roadmap.png
 ```

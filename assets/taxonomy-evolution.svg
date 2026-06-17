@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 640" font-family="system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
+<rect x="0" y="0" width="1040" height="640" fill="#fbfdff"/>
+<text x="30" y="40" font-size="24" font-weight="700" fill="#11181f">Decoy &amp; Deception: Generational Evolution</text>
+<text x="30" y="64" font-size="13" fill="#586069">From hand-built ruses to autonomous, adaptive deception. Chip colour = feature dimension; the same logic spans land, air, sea, space, EM, and cyber.</text>
+<defs><marker id="arr" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#c2ccd6"/></marker></defs>
+<line x1="30" y1="82" x2="1010" y2="82" stroke="#c2ccd6" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="30" y="96" width="222" height="58" rx="10" fill="#11202e"/>
+<text x="44" y="120" font-size="14" font-weight="700" fill="#ffffff">Classic</text>
+<text x="238" y="120" font-size="11.5" font-weight="700" fill="#7ee787" text-anchor="end">8 cases</text>
+<text x="44" y="141" font-size="10.5" fill="#9fb0c0">Manual: hand-built, visual, local</text>
+<rect x="30" y="170" width="222" height="44" rx="9" fill="#ffffff" stroke="#dbe2ea"/>
+<rect x="30" y="170" width="6" height="44" rx="3" fill="#6e7781"/>
+<text x="46" y="189" font-size="12.5" font-weight="600" fill="#1a2230">Ancient ruses</text>
+<text x="46" y="205" font-size="10.5" fill="#6e7781">Mixed &#183; antiquity</text>
+<rect x="30" y="224" width="222" height="44" rx="9" fill="#ffffff" stroke="#dbe2ea"/>
+<rect x="30" y="224" width="6" height="44" rx="3" fill="#b5651d"/>
+<text x="46" y="243" font-size="12.5" font-weight="600" fill="#1a2230">Q-ships</text>
+<text x="46" y="259" font-size="10.5" fill="#6e7781">Behavioral &#183; 1915-18</text>
+<rect x="30" y="278" width="222" height="44" rx="9" fill="#ffffff" stroke="#dbe2ea"/>
+<rect x="30" y="278" width="6" height="44" rx="3" fill="#6e7781"/>
+<text x="46" y="297" font-size="12.5" font-weight="600" fill="#1a2230">Ghost Army</text>
+<text x="46" y="313" font-size="10.5" fill="#6e7781">Mixed &#183; 1944-45</text>
+<rect x="30" y="332" width="222" height="44" rx="9" fill="#ffffff" stroke="#dbe2ea"/>
+<rect x="30" y="332" width="6" height="44" rx="3" fill="#6e7781"/>
+<text x="46" y="351" font-size="12.5" font-weight="600" fill="#1a2230">Op. Fortitude</text>
+<text x="46" y="367" font-size="10.5" fill="#6e7781">Mixed &#183; 1944</text>
+<rect x="30" y="386" width="222" height="44" rx="9" fill="#ffffff" stroke="#dbe2ea"/>
+<rect x="30" y="386" width="6" height="44" rx="3" fill="#8957e5"/>
+<text x="46" y="405" font-size="12.5" font-weight="600" fill="#1a2230">Cuckoo's Egg (cyber)</text>
+<text x="46" y="421" font-size="10.5" fill="#6e7781">Cyber &#183; 1986</text>
+<rect x="283" y="96" width="222" height="58" rx="10" fill="#11202e"/>
+<text x="297" y="120" font-size="14" font-weight="700" fill="#ffffff">Mechanical</text>
+<text x="491" y="120" font-size="11.5" font-weight="700" fill="#7ee787" text-anchor="end">10 cases</text>
+<text x="297" y="141" font-size="10.5" fill="#9fb0c0">Deployable: inflatable &amp; expendable</text>
+<rect x="283" y="170" width="222" height="44" rx="9" fill="#ffffff" stroke="#dbe2ea"/>
+<rect x="283" y="170" width="6" height="44" rx="3" fill="#1f6feb"/>
+<text x="299" y="189" font-size="12.5" font-weight="600" fill="#1a2230">Chaff &amp; flares</text>
+<text x="299" y="205" font-size="10.5" fill="#6e7781">Signal &#183; 1943-</text>
+<rect x="283" y="224" width="222" height="44" rx="9" fill="#ffffff" stroke="#dbe2ea"/>
+<rect x="283" y="224" width="6" height="44" rx="3" fill="#2f6f4f"/>
+<text x="299" y="243" font-size="12.5" font-weight="600" fill="#1a2230">Inflatable decoys (UA)</text>
+<text x="299" y="259" font-size="10.5" fill="#6e7781">Physical &#183; 2022-</text>
+<rect x="283" y="278" width="222" height="44" rx="9" fill="#ffffff" stroke="#dbe2ea"/>
+<rect x="283" y="278" width="6" height="44" rx="3" fill="#2f6f4f"/>
+<text x="299" y="297" font-size="12.5" font-weight="600" fill="#1a2230">Sea Wolf F-35 decoy</text>
+<text x="299" y="313" font-size="10.5" fill="#6e7781">Physical &#183; 2020s</text>
+<rect x="283" y="332" width="222" height="44" rx="9" fill="#ffffff" stroke="#dbe2ea"/>
+<rect x="283" y="332" width="6" height="44" rx="3" fill="#6e7781"/>
+<text x="299" y="351" font-size="12.5" font-weight="600" fill="#1a2230">Bekaa Valley SEAD</text>
+<text x="299" y="367" font-size="10.5" fill="#6e7781">Mixed &#183; 1982</text>
+<rect x="283" y="386" width="222" height="44" rx="9" fill="#ffffff" stroke="#dbe2ea"/>
+<rect x="283" y="386" width="6" height="44" rx="3" fill="#2f6f4f"/>
+<text x="299" y="405" font-size="12.5" font-weight="600" fill="#1a2230">Scud-hunt ambiguity</text>
+<text x="299" y="421" font-size="10.5" fill="#6e7781">Physical &#183; 1991</text>
+<rect x="536" y="96" width="222" height="58" rx="10" fill="#11202e"/>
+<text x="550" y="120" font-size="14" font-weight="700" fill="#ffffff">Informationized</text>
+<text x="744" y="120" font-size="11.5" font-weight="700" fill="#7ee787" text-anchor="end">21 cases</text>
+<text x="550" y="141" font-size="10.5" fill="#9fb0c0">Networked, programmable signatures</text>
+<rect x="536" y="170" width="222" height="44" rx="9" fill="#ffffff" stroke="#dbe2ea"/>
+<rect x="536" y="170" width="6" height="44" rx="3" fill="#1f6feb"/>
+<text x="552" y="189" font-size="12.5" font-weight="600" fill="#1a2230">ADM-160 MALD</text>
+<text x="552" y="205" font-size="10.5" fill="#6e7781">Signal &#183; 2009-</text>
+<rect x="536" y="224" width="222" height="44" rx="9" fill="#ffffff" stroke="#dbe2ea"/>
+<rect x="536" y="224" width="6" height="44" rx="3" fill="#1f6feb"/>
+<text x="552" y="243" font-size="12.5" font-weight="600" fill="#1a2230">Nulka active decoy</text>
+<text x="552" y="259" font-size="10.5" fill="#6e7781">Signal &#183; 1990s-</text>
+<rect x="536" y="278" width="222" height="44" rx="9" fill="#ffffff" stroke="#dbe2ea"/>
+<rect x="536" y="278" width="6" height="44" rx="3" fill="#6e7781"/>
+<text x="552" y="297" font-size="12.5" font-weight="600" fill="#1a2230">ICBM penaids</text>
+<text x="552" y="313" font-size="10.5" fill="#6e7781">Mixed &#183; 1950s-</text>
+<rect x="536" y="332" width="222" height="44" rx="9" fill="#ffffff" stroke="#dbe2ea"/>
+<rect x="536" y="332" width="6" height="44" rx="3" fill="#8957e5"/>
+<text x="552" y="351" font-size="12.5" font-weight="600" fill="#1a2230">Honeypots/honeynets</text>
+<text x="552" y="367" font-size="10.5" fill="#6e7781">Cyber &#183; 1990s-</text>
+<rect x="536" y="386" width="222" height="44" rx="9" fill="#ffffff" stroke="#dbe2ea"/>
+<rect x="536" y="386" width="6" height="44" rx="3" fill="#1f6feb"/>
+<text x="552" y="405" font-size="12.5" font-weight="600" fill="#1a2230">Iran saturation+penaids</text>
+<text x="552" y="421" font-size="10.5" fill="#6e7781">Signal &#183; 2025</text>
+<rect x="536" y="440" width="222" height="44" rx="9" fill="#ffffff" stroke="#dbe2ea"/>
+<rect x="536" y="440" width="6" height="44" rx="3" fill="#1f6feb"/>
+<text x="552" y="459" font-size="12.5" font-weight="600" fill="#1a2230">EM / false C2 nodes</text>
+<text x="552" y="475" font-size="10.5" fill="#6e7781">Signal &#183; 2020s</text>
+<rect x="789" y="96" width="222" height="58" rx="10" fill="#11202e"/>
+<text x="803" y="120" font-size="14" font-weight="700" fill="#ffffff">Intelligent</text>
+<text x="997" y="120" font-size="11.5" font-weight="700" fill="#7ee787" text-anchor="end">11 cases</text>
+<text x="803" y="141" font-size="10.5" fill="#9fb0c0">Autonomous, adaptive, swarming</text>
+<rect x="789" y="170" width="222" height="44" rx="9" fill="#ffffff" stroke="#dbe2ea"/>
+<rect x="789" y="170" width="6" height="44" rx="3" fill="#2f6f4f"/>
+<text x="805" y="189" font-size="12.5" font-weight="600" fill="#1a2230">Temerland active tank</text>
+<text x="805" y="205" font-size="10.5" fill="#6e7781">Physical &#183; 2020s</text>
+<rect x="789" y="224" width="222" height="44" rx="9" fill="#ffffff" stroke="#dbe2ea"/>
+<rect x="789" y="224" width="6" height="44" rx="3" fill="#b5651d"/>
+<text x="805" y="243" font-size="12.5" font-weight="600" fill="#1a2230">An-2 bait drone</text>
+<text x="805" y="259" font-size="10.5" fill="#6e7781">Behavioral &#183; 2020</text>
+<rect x="789" y="278" width="222" height="44" rx="9" fill="#ffffff" stroke="#dbe2ea"/>
+<rect x="789" y="278" width="6" height="44" rx="3" fill="#b5651d"/>
+<text x="805" y="297" font-size="12.5" font-weight="600" fill="#1a2230">LUCAS decoy swarm</text>
+<text x="805" y="313" font-size="10.5" fill="#6e7781">Behavioral &#183; 2026</text>
+<rect x="789" y="332" width="222" height="44" rx="9" fill="#ffffff" stroke="#dbe2ea"/>
+<rect x="789" y="332" width="6" height="44" rx="3" fill="#8957e5"/>
+<text x="805" y="351" font-size="12.5" font-weight="600" fill="#1a2230">Deception platforms</text>
+<text x="805" y="367" font-size="10.5" fill="#6e7781">Cyber &#183; 2010s-</text>
+<rect x="789" y="386" width="222" height="44" rx="9" fill="#ffffff" stroke="#dbe2ea"/>
+<rect x="789" y="386" width="6" height="44" rx="3" fill="#1f6feb"/>
+<text x="805" y="405" font-size="12.5" font-weight="600" fill="#1a2230">AI/ATR arms race</text>
+<text x="805" y="421" font-size="10.5" fill="#6e7781">Signal &#183; 2017-</text>
+<text x="30" y="610" font-size="11.5" font-weight="700" fill="#586069">Feature:</text>
+<rect x="92" y="597" width="12" height="12" rx="3" fill="#2f6f4f"/>
+<text x="109" y="607" font-size="11.5" fill="#1a2230">Physical</text>
+<rect x="184" y="597" width="12" height="12" rx="3" fill="#1f6feb"/>
+<text x="201" y="607" font-size="11.5" fill="#1a2230">Signal</text>
+<rect x="262" y="597" width="12" height="12" rx="3" fill="#b5651d"/>
+<text x="279" y="607" font-size="11.5" fill="#1a2230">Behavioral</text>
+<rect x="369" y="597" width="12" height="12" rx="3" fill="#8957e5"/>
+<text x="386" y="607" font-size="11.5" fill="#1a2230">Cyber</text>
+<rect x="440" y="597" width="12" height="12" rx="3" fill="#cf222e"/>
+<text x="457" y="607" font-size="11.5" fill="#1a2230">Narrative</text>
+<rect x="539" y="597" width="12" height="12" rx="3" fill="#6e7781"/>
+<text x="556" y="607" font-size="11.5" fill="#1a2230">Mixed</text>
+</svg>

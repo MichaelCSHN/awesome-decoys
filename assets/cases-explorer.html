@@ -11,12 +11,19 @@
   header{padding:20px 24px 8px;border-bottom:1px solid var(--line)}
   h1{margin:0 0 4px;font-size:20px}
   .sub{color:var(--muted);font-size:13px}
-  .controls{display:flex;flex-wrap:wrap;gap:10px;padding:14px 24px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:5}
+  .controls{display:flex;flex-wrap:wrap;gap:10px;padding:14px 24px 10px;background:var(--bg)}
   input,select{background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:14px}
   input[type=search]{flex:1 1 240px;min-width:200px}
   button{background:transparent;color:var(--muted);border:1px solid var(--line);border-radius:8px;padding:8px 12px;font-size:13px;cursor:pointer}
   button:hover{color:var(--ink)}
-  .count{color:var(--muted);font-size:13px;padding:8px 24px}
+  .overview{padding:0 24px 12px;display:flex;flex-wrap:wrap;gap:20px;border-bottom:1px solid var(--line)}
+  .ov-group{font-size:12px}
+  .ov-label{color:var(--muted);font-weight:700;margin-right:6px;text-transform:uppercase;letter-spacing:.04em;font-size:10.5px}
+  .ov-chip{display:inline-block;margin:4px 5px 0 0;padding:2px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted);cursor:pointer;font-size:11.5px}
+  .ov-chip b{color:var(--ink);font-weight:600}
+  .ov-chip:hover{border-color:var(--accent);color:var(--ink)}
+  .ov-chip.active{border-color:var(--accent);color:var(--ink);background:#13202b}
+  .count{color:var(--muted);font-size:13px;padding:10px 24px 4px}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px;padding:0 24px 40px}
   .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
   .card h3{margin:0 0 2px;font-size:15px}
@@ -36,7 +43,7 @@
 <body>
 <header>
   <h1>Awesome Decoys &mdash; Case Explorer</h1>
-  <div class="sub">50 cases. Filter by feature, domain, generation, era, and source tier; full-text search. Static, offline, self-contained.</div>
+  <div class="sub">50 cases. Filter by feature, domain, generation, era, and source tier; full-text search. The overview counts update live and are clickable. Static, offline, self-contained.</div>
 </header>
 <div class="controls">
   <input id="q" type="search" placeholder="Search name, actor, effect, notes, period...">
@@ -47,6 +54,7 @@
   <select id="qual"><option value="">All source tiers</option></select>
   <button id="reset">Reset</button>
 </div>
+<div class="overview" id="overview"></div>
 <div class="count" id="count"></div>
 <div class="grid" id="grid"></div>
 <footer>Source keys map to <code>references/sources.md</code> / <code>data/sources.csv</code>. Generated from <code>data/cases.csv</code> (fields: feature_dimension, domain, physical_evolution). Inclusion is not endorsement; product claims are not validated effects.</footer>
@@ -62,7 +70,7 @@ function eraOf(c){ const p=(c.period||"").toLowerCase();
   if(n<1991) return "Cold War (1946-90)"; if(n<2020) return "Post-Cold War (1991-2019)";
   return "Recent (2020+)";
 }
-const grid=document.getElementById("grid"), count=document.getElementById("count");
+const grid=document.getElementById("grid"), count=document.getElementById("count"), overview=document.getElementById("overview");
 const q=document.getElementById("q"), feat=document.getElementById("feat"), dom=document.getElementById("dom"),
       gen=document.getElementById("gen"), period=document.getElementById("period"), qual=document.getElementById("qual");
 function fillLabeled(sel,vals,labels){ const order=Object.keys(labels);
@@ -75,6 +83,23 @@ fillLabeled(gen,  CASES.map(c=>c.physical_evolution), GEN);
 fillPlain(period, CASES.map(eraOf));
 fillPlain(qual,   CASES.map(c=>c.source_quality));
 function esc(s){return (s||"").replace(/[&<>]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[m]));}
+function tally(arr,key){const m={};arr.forEach(c=>{const v=c[key]||"?";m[v]=(m[v]||0)+1});return m;}
+function ovGroup(title,counts,labels,selId,cur){
+  const order=Object.keys(labels);
+  const chips=Object.entries(counts).sort((a,b)=>order.indexOf(a[0])-order.indexOf(b[0])).map(([v,n])=>
+    `<span class="ov-chip ${v===cur?'active':''}" data-sel="${selId}" data-val="${esc(v)}">${esc(labels[v]||v)} <b>${n}</b></span>`).join("");
+  return `<div class="ov-group"><span class="ov-label">${title}</span>${chips}</div>`;
+}
+function renderOverview(out){
+  overview.innerHTML = ovGroup("Feature",tally(out,"feature_dimension"),FEAT,"feat",feat.value)
+    + ovGroup("Domain",tally(out,"domain"),DOM,"dom",dom.value)
+    + ovGroup("Generation",tally(out,"physical_evolution"),GEN,"gen",gen.value);
+  overview.querySelectorAll(".ov-chip").forEach(el=>el.addEventListener("click",()=>{
+    const s={feat,dom,gen}[el.dataset.sel];
+    s.value = (s.value===el.dataset.val) ? "" : el.dataset.val;  // toggle
+    render();
+  }));
+}
 function render(){
   const term=q.value.trim().toLowerCase();
   const out=CASES.filter(c=>{
@@ -87,6 +112,7 @@ function render(){
     return true;
   });
   count.textContent = out.length+" of "+CASES.length+" cases";
+  renderOverview(out);
   grid.innerHTML = out.map(c=>`
     <div class="card">
       <h3>${esc(c.name_zh)}</h3>

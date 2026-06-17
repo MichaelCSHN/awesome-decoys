@@ -508,6 +508,8 @@ When adding a new source, prefer a direct official or primary page first, then a
 
 A structured, queryable version of the source index — every key classified by `source_type` (journal, conference, book, think-tank, government/military, professional journal, trade media, news, vendor, analysis blog, OSINT/social, dataset, institutional reference) and by `quality_tier` — is maintained in [`data/sources.csv`](data/sources.csv) and documented in [`docs/source-schema.md`](docs/source-schema.md). Source type is orthogonal to quality tier: a vendor page is Tier A for product existence but Tier D for combat effect.
 
+Source-acquisition gaps and quality-upgrade priorities are tracked in [`references/source-wishlist.md`](references/source-wishlist.md).
+
 ## Local Seed Documents
 
 These local files are the initial knowledge base for the project:

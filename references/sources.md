@@ -32,6 +32,7 @@ The structured, queryable classification of every key below — by `source_type`
 
 ### Pre-modern and World-War decoys
 
+- `GUTENBERG-ART-WAR` - [The Art of War by Sun Tzu](https://www.gutenberg.org/ebooks/132), Project Gutenberg. Tier A/B. Classic source for deception aphorisms; use for framing, not as proof of a specific decoy case.
 - `HISTENG-QSHIPS` - [Wartime Maritime Innovation (Q-Ships)](https://historicengland.org.uk/research/current/discover-and-understand/military/first-world-war-home-front/sea/wartime-maritime-innovation/), Historic England. Tier A.
 - `SMITHSONIAN-QSHIPS` - [How Britain's Secret Decoy Ships Outfoxed German U-Boats](https://www.smithsonianmag.com/history/how-britains-secret-decoy-ships-outfoxed-german-u-boats-during-world-war-i-180986044/), Smithsonian Magazine. Tier B.
 - `IWM-DAZZLE` - [Dazzle Ships](https://www.iwm.org.uk/partnerships/mapping-the-centenary/projects/dazzle-ships), Imperial War Museums. Tier A. (Adjacent: confuse-not-conceal camouflage.)
@@ -39,6 +40,8 @@ The structured, queryable classification of every key below — by `source_type`
 - `LIVESCI-GHOST` - [Ghost Army used inflatable tanks to fool the Nazis](https://www.livescience.com/wwii-ghost-army.html), Live Science. Tier B.
 - `ATLASOBSCURA-GHOST` - [A Visual Guide to the Ghost Army](https://www.atlasobscura.com/articles/wwii-ghost-army), Atlas Obscura. Tier C. (Also Starfish sites and dummy airfields.)
 - `COLLECTOR-GHOST` - [The Ghost Army: Masters of Deception in WWII](https://www.thecollector.com/ghost-army-masters-deception-wwii/), TheCollector. Tier C. (Also Starfish and Operation Mincemeat.)
+- `TNA-MINCEMEAT` - [Operation MINCEMEAT: copies of documents made available to press](https://discovery.nationalarchives.gov.uk/details/r/C4420701), The National Archives. Tier A. Archive catalogue record; item may require onsite access.
+- `IWM-MINCEMEAT` - [What Was Operation Mincemeat?](https://www.iwm.org.uk/history/what-was-operation-mincemeat), Imperial War Museums. Tier A. Institutional overview; some automated clients may be blocked.
 
 - `IWM-FORTITUDE` - [D-Day Deception: Parachuting Dummies and Inflatable Tanks](https://www.iwm.org.uk/history/second-world-war/d-day/parachuting-dummies-and-inflatable-tanks), Imperial War Museums.
 - `ENGLISH-HERITAGE-FORTITUDE` - [D-Day Deception: Operation Fortitude South](https://www.english-heritage.org.uk/visit/places/dover-castle/history-and-stories/d-day-deception/), English Heritage.
@@ -97,6 +100,7 @@ The discrimination methods that defeat decoys across domains. Full chapter in [`
 - `SAR-DECOY-DETECTION` - [Detecting Russian Inflatable Decoys with SAR](https://syntheticapertureradar.com/detecting-russian-inflatable-decoys-with-sar/), Synthetic Aperture Radar. Tier C.
 - `FRONTIERS-AERIAL-ADV` - [On the adversarial robustness of aerial detection](https://www.frontiersin.org/journals/computer-science/articles/10.3389/fcomp.2024.1349206/full), Frontiers in Computer Science (2024). Tier A. (Survey of adversarial attacks/defenses against aerial and SAR ATR.)
 - `ARXIV-SMGAA` - [Scattering Model Guided Adversarial Examples for SAR Target Recognition](https://arxiv.org/abs/2209.04779), arXiv / IEEE TGRS. Tier A/B. (Scatterer-based physical adversarial attacks and robust-training defense.)
+- `PATENT-IR-DECOY` - [Reference volume infrared decoy](https://patents.google.com/patent/US6407690B1/en), Google Patents / US Patent. Tier A/B. Technical reference for IR decoy realism concepts; not evidence of deployed performance.
 - `RAND-KOSOVO` - [NATO's Air War for Kosovo](https://www.rand.org/content/dam/rand/pubs/monograph_reports/MR1365/RAND_MR1365.pdf), RAND. Tier A. Useful for BDA and target-validation uncertainty.
 - `USNI-ACE-PROBLEMS` - [Problems for Agile Combat Employment](https://www.usni.org/magazines/proceedings/2024/july/problems-agile-combat-employment), U.S. Naval Institute. Tier A/B. Useful for AI/space-sensing pressure on dispersion and deception.
 
@@ -114,6 +118,9 @@ These are the canonical signature/expendable decoy systems — the backbone of t
 
 - `FAS-TALD` - [ADM-141 Tactical Air-Launched Decoy (TALD)/ITALD](https://man.fas.org/dod-101/sys/ac/equip/tald.htm), FAS (DoD-101). Tier A.
 - `DSN-TALD` - [IMI (Brunswick) ADM-141 TALD](https://www.designation-systems.net/dusrm/m-141.html), Designation-Systems.net. Tier A/B.
+- `DARPA-MALD-TIMELINE` - [Miniature Air-Launched Decoy](https://www.darpa.mil/about/innovation-timeline/mald), DARPA. Tier A. Official program-origin timeline.
+- `RTX-MALD` - [MALD Decoy](https://www.rtx.com/raytheon/what-we-do/air/mald-decoy), RTX / Raytheon. Tier A for product existence and claimed role.
+- `DOTE-MALDJ-2016` - [Miniature Air Launched Decoy - Jammer (MALD-J)](https://www.dote.osd.mil/Portals/97/pub/reports/FY2016/af/2016mald.pdf?ver=2019-08-22-), Director Operational Test and Evaluation. Tier A.
 - `ASF-MALD` - [ADM-160 MALD](https://www.airandspaceforces.com/weapons/adm-160-mald/), Air & Space Forces Magazine. Tier B.
 - `DSN-MALD` - [ADM-160A/B/C MALD](https://www.designation-systems.net/dusrm/m-160.html), Designation-Systems.net. Tier A/B.
 - `GS-MALD` - [ADM-160 Miniature Air-Launched Decoy (MALD)](https://www.globalsecurity.org/military/systems/aircraft/systems/mald.htm), GlobalSecurity.org. Tier B/C.
@@ -121,6 +128,9 @@ These are the canonical signature/expendable decoy systems — the backbone of t
 
 ### Towed decoys (air)
 
+- `GS-ALE50` - [AN/ALE-50 Towed Decoy System](https://www.globalsecurity.org/military/systems/aircraft/systems/an-ale-50.htm), GlobalSecurity.org. Tier B. System overview and program context.
+- `BAE-ALE55` - [AN/ALE-55 Fiber Optic Towed Decoy](https://www.baesystems.com/en-us/product/an-ale-55-fiber-optic-towed-decoy), BAE Systems. Tier A for product existence and specs-as-claimed.
+- `PATENT-ALE55` - [Airborne fiber optic towed decoy / antenna system patent](https://patents.google.com/patent/US20050099347A1/en), Google Patents / US Patent. Tier A/B for architecture concepts, not field performance.
 - `WIKI-ALE50` - [AN/ALE-50 towed decoy system](https://en.wikipedia.org/wiki/AN/ALE-50_towed_decoy_system), Wikipedia. Tier C. ("Little Buddy"; combat-proven over Kosovo/Iraq.)
 - `WIKI-ALE55` - [AN/ALE-55 fiber-optic towed decoy](https://en.wikipedia.org/wiki/AN/ALE-55_fiber-optic_towed_decoy), Wikipedia. Tier C. (IDECM with AN/ALQ-214.)
 
@@ -130,11 +140,15 @@ These are the canonical signature/expendable decoy systems — the backbone of t
 - `BAE-NULKA` - [Nulka active missile decoy](https://www.baesystems.com/en/product/nulka), BAE Systems. Tier A (product).
 - `DST-NULKA` - [Nulka Active Missile Decoy](https://www.dst.defence.gov.au/innovation/nulka-active-missile-decoy), Australian DST Group. Tier A.
 - `FAS-NIXIE` - [AN/SLQ-25 Nixie](https://man.fas.org/dod-101/sys/ship/weaps/an-slq-25.htm), FAS (DoD-101). Tier A.
+- `ULTRA-TORPEDO-CM` - [Torpedo Countermeasures](https://umaritime.com/product/torpedo-countermeasures/), Ultra Maritime. Tier A/B for product-family existence and claimed roles.
+- `GLSV-ACOUSTIC-CM` - [Low-cost expendable acoustic countermeasure SBIR](https://www.glsv.com/glsv-awarded-us-navy-sbir-to-develop-a-low-cost-expendable-acoustic-countermeasure/), Great Lakes Sound and Vibration. Tier A/B for SBIR/product direction; not validated effect.
 - `WIKI-NIXIE` - [AN/SLQ-25 Nixie](https://en.wikipedia.org/wiki/AN/SLQ-25_Nixie), Wikipedia. Tier C.
 
 ### Strategic penetration aids
 
 - `CSIS-PENAIDS` - [Countermeasures, Penetration Aids, and Missile Defense](https://missilethreat.csis.org/countermeasures-penetration-aids-and-missile-defense/), CSIS Missile Threat. Tier A.
+- `SPACECOM-LRDR` - [Long-Range Discrimination Radar initially fielded in Alaska](https://www.spacecom.mil/Newsroom/News/Article-Display/Article/2870224/long-range-discrimination-radar-initially-fielded-in-alaska/), U.S. Space Command. Tier A.
+- `FEDREG-LRDR-ROD` - [Record of Decision for the Long Range Discrimination Radar Operations at Clear Air Force Station](https://www.federalregister.gov/documents/2021/06/24/2021-13406/record-of-decision-for-the-long-range-discrimination-radar-operations-at-clear-air-force-station), Federal Register. Tier A.
 - `GS-MIDCOURSE` - [Mid-Course Phase](https://www.globalsecurity.org/space/systems/mid-course.htm), GlobalSecurity.org. Tier B/C. (Discrimination problem; MIT Countermeasures report.)
 
 ## Cyber Deception
@@ -167,6 +181,8 @@ The cyber-domain decoy branch — honeypots, honeytokens, deception networks, an
 
 ### Historical
 
+- `STOLL-WILY-HACKER` - [Stalking the wily hacker](https://dl.acm.org/doi/10.1145/66093.66095), Communications of the ACM. Tier A. Clifford Stoll's contemporary account of the Lawrence Berkeley Lab intrusion investigation.
+- `SPRINGER-CUCKOO` - [The Cuckoo's Egg: Tracking a Spy Through the Maze of Computer Espionage](https://link.springer.com/book/10.1007/978-1-4419-9953-7), Springer. Tier A. Book source for the SDInet decoy-documents account.
 - `WIKI-CUCKOO` - [The Cuckoo's Egg](https://en.wikipedia.org/wiki/The_Cuckoo%27s_Egg_(book)), Wikipedia. Tier C. (Clifford Stoll, 1989; SDInet decoy documents.)
 
 ## Recent Conflict Decoy and Saturation Cases (2020-2026)
@@ -206,6 +222,7 @@ The cyber-domain decoy branch — honeypots, honeytokens, deception networks, an
 
 ## Notes for Future Updates
 
+- Source acquisition gaps are tracked in [`source-wishlist.md`](source-wishlist.md).
 - Add page numbers for PDF sources after local extraction.
 - Add `source_date`, `accessed_date`, and `archive_url` fields if the repository becomes public-facing.
 - Avoid copying images or long text from sources unless license terms are clear; link and summarize instead.

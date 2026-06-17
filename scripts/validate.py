@@ -24,6 +24,10 @@ def fail(errors: list[str], message: str) -> None:
     errors.append(message)
 
 
+def warn(warnings: list[str], message: str) -> None:
+    warnings.append(message)
+
+
 def check_unique(rows: list[dict[str, str]], key: str, rel: str, errors: list[str]) -> None:
     values = [row.get(key, "").strip() for row in rows]
     blanks = [idx + 2 for idx, value in enumerate(values) if not value]
@@ -40,6 +44,26 @@ def check_case_sources(cases: list[dict[str, str]], sources: list[dict[str, str]
         for key in [part.strip() for part in row.get("source_refs", "").split(";") if part.strip()]:
             if key not in source_keys:
                 fail(errors, f"data/cases.csv: {row['case_id']} references missing source key {key}")
+
+
+def check_source_quality_warnings(
+    cases: list[dict[str, str]], sources: list[dict[str, str]], warnings: list[str]
+) -> None:
+    source_by_key = {row["source_key"].strip(): row for row in sources}
+    for row in cases:
+        refs = [part.strip() for part in row.get("source_refs", "").split(";") if part.strip()]
+        if len(refs) < 2:
+            warn(warnings, f"data/cases.csv: {row['case_id']} has fewer than 2 source_refs")
+        tiers = [source_by_key.get(ref, {}).get("quality_tier", "").strip() for ref in refs]
+        if refs and not any(tier.startswith("A") for tier in tiers):
+            warn(warnings, f"data/cases.csv: {row['case_id']} has no A-tier source_refs")
+
+    for row in sources:
+        key = row.get("source_key", "").strip()
+        if not row.get("url", "").strip():
+            warn(warnings, f"data/sources.csv: {key} has a blank url")
+        if row.get("notes", "").strip().upper().startswith("STUB:"):
+            warn(warnings, f"data/sources.csv: {key} is still marked STUB")
 
 
 def check_sources_markdown(sources: list[dict[str, str]], errors: list[str]) -> None:
@@ -103,6 +127,7 @@ def check_case_explorer(cases: list[dict[str, str]], errors: list[str]) -> None:
 
 def main() -> int:
     errors: list[str] = []
+    warnings: list[str] = []
     cases = read_csv("data/cases.csv")
     sources = read_csv("data/sources.csv")
     vendors = read_csv("data/vendors.csv")
@@ -111,6 +136,7 @@ def main() -> int:
     check_unique(sources, "source_key", "data/sources.csv", errors)
     check_unique(vendors, "vendor_key", "data/vendors.csv", errors)
     check_case_sources(cases, sources, errors)
+    check_source_quality_warnings(cases, sources, warnings)
     check_sources_markdown(sources, errors)
     check_local_links(errors)
     check_case_explorer(cases, errors)
@@ -120,6 +146,11 @@ def main() -> int:
         for error in errors:
             print(f"- {error}")
         return 1
+
+    if warnings:
+        print("Validation warnings:")
+        for warning in warnings:
+            print(f"- {warning}")
 
     print(
         "Validation passed: "

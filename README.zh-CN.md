@@ -36,6 +36,7 @@
 - `data/sources.csv`：结构化来源索引。
 - `data/vendors.csv`：厂商与组织图谱。
 - `references/sources.md`：面向阅读的来源索引。
+- `references/source-wishlist.zh-CN.md`：信源缺口和补强优先级。
 - `assets/cases-explorer.html`：离线、静态、可筛选的案例浏览器。
 
 当前数据规模由校验脚本自动统计。运行：

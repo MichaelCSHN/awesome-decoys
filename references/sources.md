@@ -76,6 +76,41 @@ This file maps short source keys used in `data/cases.csv` to public references. 
 - `RAND-KOSOVO` - [NATO's Air War for Kosovo](https://www.rand.org/content/dam/rand/pubs/monograph_reports/MR1365/RAND_MR1365.pdf), RAND. Useful for BDA and target-validation uncertainty.
 - `USNI-ACE-PROBLEMS` - [Problems for Agile Combat Employment](https://www.usni.org/magazines/proceedings/2024/july/problems-agile-combat-employment), U.S. Naval Institute. Useful for AI/space-sensing pressure on dispersion and deception.
 
+## Recent Conflict Decoy and Saturation Cases (2020-2026)
+
+### Nagorno-Karabakh 2020 (An-2 bait drones / SEAD by decoy)
+
+- `ARMY-NK2020-LESSONS` - [Lessons from the Nagorno-Karabakh 2020 Conflict](https://api.army.mil/e2/c/downloads/2023/01/31/693ac148/21-655-nagorno-karabakh-2020-conflict-catalog-aug-21-public.pdf), U.S. Army (Combat Studies / lessons catalog). Tier A.
+- `RAF-ASPR-NK-DRONES` - [The 2020 Nagorno Karabakh War: Unmanned Combat](https://www.raf.mod.uk/what-we-do/centre-for-air-and-space-power-studies/aspr/aspr-vol25-iss2-3-pdf/), RAF Air and Space Power Review. Tier A.
+- `BAS-AN2-CROPDUSTER` - [The next frontier in drone warfare? A Soviet-era crop duster](https://thebulletin.org/2021/02/the-next-frontier-in-drone-warfare-a-soviet-era-crop-duster/), Bulletin of the Atomic Scientists. Tier B.
+- `SWJ-NK-LESSONS` - [What the United States Military Can Learn from the Nagorno-Karabakh War](https://smallwarsjournal.com/2021/04/04/what-united-states-military-can-learn-nagorno-karabakh-war/), Small Wars Journal (Arizona State University). Tier B.
+
+### Russia-Ukraine (HIMARS decoys, aerial/airbase decoys)
+
+- `WAPO-UA-HIMARS-DECOY` - [Ukraine lures Russian missiles with decoys of U.S. rocket system](https://www.washingtonpost.com/world/2022/08/30/ukraine-russia-himars-decoy-artillery/), The Washington Post. Tier B.
+- `UP-KALIBR-VS-HIMARS` - [Real Kalibr missiles vs HIMARS decoys](https://www.pravda.com.ua/eng/articles/2024/03/11/7445807/), Ukrainska Pravda. Tier B. (Metinvest 250+ mock-ups; Kamyshin on a decoy-deployment "user manual".)
+- `EUROMAIDAN-MASTERS-ILLUSION` - [Masters of illusion: Ukraine's decoy makers outwit Russia](https://euromaidanpress.com/2024/03/13/masters-of-illusion-ukraines-decoy-makers-outwit-russia/), Euromaidan Press. Tier C.
+- `ARMYRECOG-FORTITUDE` - [Ukraine's mastery of decoy warfare](https://www.armyrecognition.com/focus-analysis-conflicts/army/conflicts-in-the-world/russia-ukraine-war-2022/analysis-ukraine-s-mastery-of-decoy-warfare-named-fortitude), Army Recognition. Tier C.
+- `USNI-DECOY-WARFARE-UKRAINE` - [Decoy Warfare: Lessons and Implication from the War in Ukraine](https://www.usni.org/magazines/proceedings/2024/april/decoy-warfare-lessons-and-implication-war-ukraine), U.S. Naval Institute Proceedings. Tier A/B. (Russian inert cruise-missile/drone decoys, inflatable command posts, painted Tu-95 at Engels, decoy balloons.)
+
+### Iran-Israel and US-Israel-Iran (saturation, penetration aids, cost-exchange)
+
+- `FPRI-SHALLOW-RAMPARTS` - [Shallow Ramparts: Air and Missile Defenses in the June 2025 Israel-Iran War](https://www.fpri.org/article/2025/10/shallow-ramparts-air-and-missile-defenses-in-the-june-2025-israel-iran-war/), Foreign Policy Research Institute. Tier A/B. (True Promise I/II composition and impact counts; June 2025 saturation.)
+- `TWZ-IRAN-CLUSTER-WARHEAD` - [Iran Is Piercing Israel's Ballistic Missile Defenses With High-Altitude Cluster Warhead Releases](https://www.twz.com/land/iran-is-piercing-israels-ballistic-missile-defenses-with-high-altitude-cluster-warhead-releases), The War Zone. Tier B.
+- `DSA-IRAN-SATURATION` - [Israel Admits Missile Shield Limits: Iran's Ballistic Arsenal Could Overwhelm Iron Dome, Arrow and U.S. Gulf Bases](https://defencesecurityasia.com/en/israel-iran-ballistic-missile-threat-5000-missiles-iron-dome-arrow-gulf-bases-2027/), Defence Security Asia. Tier C. (Decoys "to dilute tracking fidelity"; interceptor depletion toward 2027.)
+- `SATURATION-LAYERED-BATTLEFIELD` - [Missile Saturation and the Layered Battlefield](https://trevor-barnes.com/p/missile-saturation-and-the-layered), analyst essay. Tier C. (Cost-of-defense framing; April 2024 ~US$1B intercept night.)
+
+### Houthi / Red Sea cost-exchange
+
+- `NEWLINES-HOUTHI-DRONES` - [Cheap Houthi Drones Are Draining the Pentagon's Coffers](https://newlinesmag.com/argument/cheap-houthi-drones-are-draining-the-pentagons-coffers/), New Lines Magazine. Tier B.
+- `NATIONAL-CHEAP-DRONES` - [Drones get cheaper and deadlier as armies race for low-cost defences](https://www.thenationalnews.com/news/mena/2025/01/23/drones-get-cheaper-and-deadlier-as-armies-race-for-low-cost-defences/), The National. Tier B.
+- `GEOPOL-DRONES-DOLLARS` - [Drones vs. Dollars: The Costly Calculus of U.S.-Houthi Warfare](https://geopoliticsunplugged.substack.com/p/drones-vs-dollars-the-costly-calculus), Geopolitics Unplugged. Tier C. (Operation Rough Rider; mobile launchers and decoy systems complicate targeting.)
+- `NBC-HOUTHI-DRONES` - [How Yemen's Houthi rebels have leveraged cheap drones into military success](https://www.nbcnews.com/tech/security/yemens-houthi-rebels-used-cheap-drones-attacks-years-rcna135117), NBC News (quotes CSIS Missile Defense Project). Tier B.
+
+### Reversing the cost equation (US offensive decoys)
+
+- `DEFENSEINFO-EPICFURY-LUCAS` - [From Red Sea Defense to Epic Fury: How the U.S. Flipped the Drone Cost Equation](https://defense.info/featured-story/2026/03/from-red-sea-defense-to-epic-fury-how-the-u-s-flipped-the-drone-cost-equation/), Defense.info. Tier C. Single-outlet, recent; corroborate before formal citation.
+
 ## Notes for Future Updates
 
 - Add page numbers for PDF sources after local extraction.

@@ -13,6 +13,7 @@
 - [Source Quality Tiers](#source-quality-tiers)
 - [Doctrine and Concepts](#doctrine-and-concepts)
 - [Modern Battlefield Lessons](#modern-battlefield-lessons)
+- [Recent Conflicts (2020-2026)](#recent-conflicts-2020-2026)
 - [Inflatable and Physical Decoys](#inflatable-and-physical-decoys)
 - [Active and Autonomous Decoys](#active-and-autonomous-decoys)
 - [Electromagnetic and Multi-Spectral Deception](#electromagnetic-and-multi-spectral-deception)
@@ -133,7 +134,10 @@ Initial cases:
 | Desert Storm deception | 1990-1991 | Amphibious feint, force posture deception, false attack expectation | Shows deception integrated with maneuver and operational design rather than isolated decoy objects. |
 | Desert Storm Scud hunt | 1991 | Mobile missile TEL ambiguity and decoy/similar-vehicle problem | Demonstrates how mobile false targets and uncertainty can consume disproportionate ISR and strike effort. |
 | Kosovo / Operation Allied Force | 1999 | Serbian camouflage, decoys, emission discipline, shoot-and-scoot IADS | Shows how a weaker force can preserve assets by exploiting target-identification uncertainty. |
+| Nagorno-Karabakh An-2 bait drones | 2020 | Expendable manned-aircraft-turned-drones used as SEAD bait | Flagship case of an attritable decoy used to expose and suppress enemy air defenses. |
 | Russia-Ukraine inflatable decoys | 2022-present | Tanks, artillery, aircraft, HIMARS-like systems | Current cost-imposition case under drones, precision fires, thermal sensors, and public BDA. |
+| Iran-Israel direct strikes | 2024-2025 | Saturation salvos, mixed threats, maneuvering/cluster warheads | Decoy-as-signal: overwhelms tracking and prioritization and depletes expensive interceptors. |
+| Houthi Red Sea campaign | 2023-present | Cheap drones/missiles vs multimillion-dollar interceptors | Pure cost-exchange/asymmetry case; mobile launchers and ground decoys frustrate counter-strikes. |
 | Sea Wolf F-35 decoy | 2020s | Inflatable aircraft decoy with thermal/radar categories | Useful industry example for airbase survivability and autonomous decoy aircraft requirements. |
 | Temerland active Leopard decoy | 2020s | Vehicle-based mobile/remote decoy concept | Bridges passive mockup and active behavioral deception. |
 | EM decoy / false C2 node concepts | 2020s | Spectrum deception, fake emissions, command-post decoys | Extends decoy thinking from visible objects to detectable signatures. |
@@ -163,6 +167,43 @@ Use source tiering conservatively: a vendor page can be Tier A for product claim
 - [Russia And Ukraine Are Deploying Increasingly Advanced Decoy Tanks](https://www.forbes.com/sites/vikrammittal/2025/03/03/russia-and-ukraine-are-deploying-increasingly-advanced-decoy-tanks/) - Useful case material on decoy evolution under drone observation.
 - [Inflatable Tanks And Missiles: Czech Firm Makes Decoy Armaments](https://apnews.com/article/a9c478adb9d7ecaa615cb19b25f4833f) - AP report on increased demand for inflatable decoys during the Russia-Ukraine war.
 - [Inflatable Tanks And Missiles: Czech Firm Makes Decoy Armaments](https://www.rferl.org/a/czech-inflatable-weapon-decoys-ukraine/32305583.html) - RFE/RL version with visuals and production context.
+
+## Recent Conflicts (2020-2026)
+
+These are the recent, well-observed cases that show the two dominant modern decoy logics: **decoy-as-object** (cheap physical false targets that absorb precision fires) and **decoy-as-signal** (saturation, mixed salvos, and penetration aids that overwhelm a defender's tracking, prioritization, and interceptor magazine). A recurring theme is the **cost-exchange**: a low-cost decoy or munition forcing the expenditure of a far more expensive interceptor or strike weapon.
+
+### Nagorno-Karabakh 2020 - SEAD by decoy
+
+- Azerbaijan flew Soviet-era An-2 biplanes, converted into expendable one-way drones, as bait to make Armenian air defenses activate and fire, exposing their positions for Bayraktar TB2 and Harop strikes. This is the flagship modern example of an attritable decoy used for suppression of enemy air defenses.
+- [Lessons from the Nagorno-Karabakh 2020 Conflict](https://api.army.mil/e2/c/downloads/2023/01/31/693ac148/21-655-nagorno-karabakh-2020-conflict-catalog-aug-21-public.pdf) - U.S. Army lessons catalog.
+- [The 2020 Nagorno Karabakh War: Unmanned Combat](https://www.raf.mod.uk/what-we-do/centre-for-air-and-space-power-studies/aspr/aspr-vol25-iss2-3-pdf/) - RAF Air and Space Power Review.
+- [The next frontier in drone warfare? A Soviet-era crop duster](https://thebulletin.org/2021/02/the-next-frontier-in-drone-warfare-a-soviet-era-crop-duster/) - Bulletin of the Atomic Scientists.
+
+### Russia-Ukraine - decoy HIMARS and aerial/airbase decoys
+
+- Ukraine baited Russian Kalibr and Iskander strikes onto wooden and higher-fidelity HIMARS/M777/radar mock-ups; one firm reportedly built 250+ replicas. Russia in turn used inert cruise missiles and Iranian-type drones as decoys, inflatable command posts, decoy balloons, and painted bomber silhouettes (e.g., at Engels).
+- [Ukraine lures Russian missiles with decoys of U.S. rocket system](https://www.washingtonpost.com/world/2022/08/30/ukraine-russia-himars-decoy-artillery/) - The Washington Post.
+- [Real Kalibr missiles vs HIMARS decoys](https://www.pravda.com.ua/eng/articles/2024/03/11/7445807/) - Ukrainska Pravda.
+- [Decoy Warfare: Lessons and Implication from the War in Ukraine](https://www.usni.org/magazines/proceedings/2024/april/decoy-warfare-lessons-and-implication-war-ukraine) - U.S. Naval Institute Proceedings (also covers Russian aerial decoys).
+
+### Iran-Israel and US-Israel-Iran - saturation and penetration aids
+
+- Across True Promise I and II (2024) and the twelve-day June 2025 war (Rising Lion / True Promise III, with US strikes on Iranian nuclear sites), Iran's method was less about physical dummies and more about decoying the *defense*: large mixed salvos, then ballistic-heavy saturation with maneuvering and cluster/submunition warheads to dilute tracking fidelity and drain scarce, expensive interceptors (Arrow, David's Sling, THAAD, SM-3, Patriot). The April 2024 intercept night reportedly cost the defender on the order of US$1B.
+- [Shallow Ramparts: Air and Missile Defenses in the June 2025 Israel-Iran War](https://www.fpri.org/article/2025/10/shallow-ramparts-air-and-missile-defenses-in-the-june-2025-israel-iran-war/) - Foreign Policy Research Institute.
+- [Iran Is Piercing Israel's Ballistic Missile Defenses With High-Altitude Cluster Warhead Releases](https://www.twz.com/land/iran-is-piercing-israels-ballistic-missile-defenses-with-high-altitude-cluster-warhead-releases) - The War Zone.
+
+### Houthi / Red Sea - the cost-exchange problem
+
+- Since late 2023, cheap (~US$2k-40k) one-way drones and missiles forced US/coalition warships to expend multimillion-dollar interceptors; shore-based mobile launchers and decoy systems complicated counter-targeting. The asymmetry is the lesson, not any single intercept.
+- [Cheap Houthi Drones Are Draining the Pentagon's Coffers](https://newlinesmag.com/argument/cheap-houthi-drones-are-draining-the-pentagons-coffers/) - New Lines Magazine.
+- [How Yemen's Houthi rebels have leveraged cheap drones into military success](https://www.nbcnews.com/tech/security/yemens-houthi-rebels-used-cheap-drones-attacks-years-rcna135117) - NBC News.
+
+### Reversing the equation - offensive decoys (provisional)
+
+- Reporting in 2026 describes US Central Command using massed low-cost decoy drones (LUCAS) offensively against Iranian air defenses to open windows for follow-on strikes, inverting the Red Sea cost logic and echoing the Nagorno-Karabakh decoy-SEAD pattern at scale. Single-outlet and recent; treat as provisional.
+- [From Red Sea Defense to Epic Fury: How the U.S. Flipped the Drone Cost Equation](https://defense.info/featured-story/2026/03/from-red-sea-defense-to-epic-fury-how-the-u-s-flipped-the-drone-cost-equation/) - Defense.info.
+
+> Source keys and tiers for all of the above are in [`references/sources.md`](references/sources.md) under "Recent Conflict Decoy and Saturation Cases (2020-2026)". Strike counts, intercept percentages, and cost figures are reported estimates that vary by source; keep them separate from validated effects.
 
 ## Inflatable and Physical Decoys
 
@@ -375,6 +416,7 @@ Extracted text is available in:
 - [x] Build a structured case database: country, organization, platform, target type, mobility, spectral features, source quality.
 - [x] Define the top-level taxonomy across time, feature, physical evolution, lifecycle, and additional dimensions.
 - [x] Add historical cases: Operation Fortitude, Desert Storm deception, Kosovo air defense decoys, Gulf War Scud decoys.
+- [x] Add recent-conflict cases the project emphasizes: Nagorno-Karabakh 2020 (SEAD by decoy), Russia-Ukraine HIMARS/aerial decoys, Iran-Israel saturation and penaids (2024-2025), Houthi Red Sea cost-exchange, and offensive decoy reporting.
 - [x] Add airbase survivability resources: Agile Combat Employment, dispersed operations, hardening vs. deception.
 - [x] Add source-quality tiers and a dedicated source index.
 - [ ] Expand pre-modern and ancient deception cases.

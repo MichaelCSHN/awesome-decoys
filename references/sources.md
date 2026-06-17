@@ -85,6 +85,42 @@ The structured, queryable classification of every key below — by `source_type`
 - `RAND-KOSOVO` - [NATO's Air War for Kosovo](https://www.rand.org/content/dam/rand/pubs/monograph_reports/MR1365/RAND_MR1365.pdf), RAND. Useful for BDA and target-validation uncertainty.
 - `USNI-ACE-PROBLEMS` - [Problems for Agile Combat Employment](https://www.usni.org/magazines/proceedings/2024/july/problems-agile-combat-employment), U.S. Naval Institute. Useful for AI/space-sensing pressure on dispersion and deception.
 
+## Signal and Expendable Decoy Hardware
+
+These are the canonical signature/expendable decoy systems — the backbone of the "signal" feature dimension and the "informationized" generation. They span air, naval, and strategic domains.
+
+### Expendable RF/IR countermeasures (chaff and flares)
+
+- `GS-FLARES` - [Flares - Infrared Countermeasures](https://www.globalsecurity.org/military/systems/aircraft/systems/flares.htm), GlobalSecurity.org. Tier B. (Also covers chaff and the AN/ALE-47 dispenser.)
+- `WIKI-CHAFF` - [Chaff (countermeasure)](https://en.wikipedia.org/wiki/Chaff_(countermeasure)), Wikipedia. Tier C. (WWII "Window" origin; Doppler discrimination.)
+- `MM-COUNTERMEASURES` - [How Aircraft Countermeasures Win the Battle Against Incoming Missiles](https://militarymachine.com/missile-countermeasures-chaff-flares-decoys), Military Machine. Tier C. (Multispectral/kinematic flares vs imaging IR; DIRCM.)
+
+### Air-launched decoys (TALD, MALD)
+
+- `FAS-TALD` - [ADM-141 Tactical Air-Launched Decoy (TALD)/ITALD](https://man.fas.org/dod-101/sys/ac/equip/tald.htm), FAS (DoD-101). Tier A.
+- `DSN-TALD` - [IMI (Brunswick) ADM-141 TALD](https://www.designation-systems.net/dusrm/m-141.html), Designation-Systems.net. Tier A/B.
+- `ASF-MALD` - [ADM-160 MALD](https://www.airandspaceforces.com/weapons/adm-160-mald/), Air & Space Forces Magazine. Tier B.
+- `DSN-MALD` - [ADM-160A/B/C MALD](https://www.designation-systems.net/dusrm/m-160.html), Designation-Systems.net. Tier A/B.
+- `GS-MALD` - [ADM-160 Miniature Air-Launched Decoy (MALD)](https://www.globalsecurity.org/military/systems/aircraft/systems/mald.htm), GlobalSecurity.org. Tier B/C.
+
+### Towed decoys (air)
+
+- `WIKI-ALE50` - [AN/ALE-50 towed decoy system](https://en.wikipedia.org/wiki/AN/ALE-50_towed_decoy_system), Wikipedia. Tier C. ("Little Buddy"; combat-proven over Kosovo/Iraq.)
+- `WIKI-ALE55` - [AN/ALE-55 fiber-optic towed decoy](https://en.wikipedia.org/wiki/AN/ALE-55_fiber-optic_towed_decoy), Wikipedia. Tier C. (IDECM with AN/ALQ-214.)
+
+### Naval and undersea decoys (Nulka, Nixie)
+
+- `NAVY-NULKA-MK53` - [MK 53 Decoy Launching System (Nulka)](https://www.navy.mil/Resources/Fact-Files/Display-FactFiles/Article/2167877/mk-53-decoy-launching-system-nulka/), U.S. Navy Fact File. Tier A.
+- `BAE-NULKA` - [Nulka active missile decoy](https://www.baesystems.com/en/product/nulka), BAE Systems. Tier A (product).
+- `DST-NULKA` - [Nulka Active Missile Decoy](https://www.dst.defence.gov.au/innovation/nulka-active-missile-decoy), Australian DST Group. Tier A.
+- `FAS-NIXIE` - [AN/SLQ-25 Nixie](https://man.fas.org/dod-101/sys/ship/weaps/an-slq-25.htm), FAS (DoD-101). Tier A.
+- `WIKI-NIXIE` - [AN/SLQ-25 Nixie](https://en.wikipedia.org/wiki/AN/SLQ-25_Nixie), Wikipedia. Tier C.
+
+### Strategic penetration aids
+
+- `CSIS-PENAIDS` - [Countermeasures, Penetration Aids, and Missile Defense](https://missilethreat.csis.org/countermeasures-penetration-aids-and-missile-defense/), CSIS Missile Threat. Tier A.
+- `GS-MIDCOURSE` - [Mid-Course Phase](https://www.globalsecurity.org/space/systems/mid-course.htm), GlobalSecurity.org. Tier B/C. (Discrimination problem; MIT Countermeasures report.)
+
 ## Recent Conflict Decoy and Saturation Cases (2020-2026)
 
 ### Nagorno-Karabakh 2020 (An-2 bait drones / SEAD by decoy)

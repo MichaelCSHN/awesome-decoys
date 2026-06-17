@@ -14,6 +14,7 @@
 - [Doctrine and Concepts](#doctrine-and-concepts)
 - [Modern Battlefield Lessons](#modern-battlefield-lessons)
 - [Recent Conflicts (2020-2026)](#recent-conflicts-2020-2026)
+- [Signal and Expendable Decoy Hardware](#signal-and-expendable-decoy-hardware)
 - [Inflatable and Physical Decoys](#inflatable-and-physical-decoys)
 - [Active and Autonomous Decoys](#active-and-autonomous-decoys)
 - [Electromagnetic and Multi-Spectral Deception](#electromagnetic-and-multi-spectral-deception)
@@ -205,6 +206,42 @@ These are the recent, well-observed cases that show the two dominant modern deco
 - [From Red Sea Defense to Epic Fury: How the U.S. Flipped the Drone Cost Equation](https://defense.info/featured-story/2026/03/from-red-sea-defense-to-epic-fury-how-the-u-s-flipped-the-drone-cost-equation/) - Defense.info.
 
 > Source keys and tiers for all of the above are in [`references/sources.md`](references/sources.md) under "Recent Conflict Decoy and Saturation Cases (2020-2026)". Strike counts, intercept percentages, and cost figures are reported estimates that vary by source; keep them separate from validated effects.
+
+## Signal and Expendable Decoy Hardware
+
+This is the backbone of the **signal feature dimension** and the **informationized generation**: fielded systems that imitate a platform's *signature* (radar, infrared, acoustic) rather than its shape. They are recorded in [`data/cases.csv`](data/cases.csv) with the `SIG-` and `HIST-1982-BEKAA` keys.
+
+The throughline is an arms race against the seeker: each decoy works until the sensor learns to discriminate it (Doppler processing vs chaff, imaging-IR vs flares, midcourse discrimination vs penaids), which links this section directly to the counter-decoy branch.
+
+### Expendable RF/IR countermeasures (chaff and flares)
+
+- The oldest signal decoys still in daily use. Chaff (RF) dates to WWII "Window"; flares (IR) are magnesium or multispectral/kinematic payloads that present a hotter, aircraft-like target to a heat-seeker. Dispensed by systems such as the AN/ALE-47.
+- [Flares - Infrared Countermeasures](https://www.globalsecurity.org/military/systems/aircraft/systems/flares.htm) - GlobalSecurity.org (chaff, flares, ALE-47).
+- [Chaff (countermeasure)](https://en.wikipedia.org/wiki/Chaff_(countermeasure)) - origin and Doppler discrimination.
+
+### Air-launched decoys: TALD and MALD
+
+- The lineage runs ADM-20 Quail (1950s-60s, B-52-carried) -> Samson/ADM-141 TALD/ITALD (Bekaa 1982, Desert Storm 1991) -> DARPA MALD -> ADM-160 MALD/MALD-J (SEAD; combat use reported in Ukraine). These mimic an aircraft's radar cross-section, and the jammer variant (MALD-J) adds stand-in jamming.
+- [ADM-141 TALD/ITALD](https://man.fas.org/dod-101/sys/ac/equip/tald.htm) - FAS (DoD-101).
+- [ADM-160 MALD](https://www.airandspaceforces.com/weapons/adm-160-mald/) - Air & Space Forces Magazine.
+
+### Towed decoys (air)
+
+- Off-board RF decoys streamed behind the aircraft to pull a radar-guided missile's lock onto the towed body. The ALE-50 ("Little Buddy") is combat-proven; the ALE-55 fiber-optic towed decoy is part of the IDECM suite with the AN/ALQ-214.
+- [AN/ALE-50 towed decoy system](https://en.wikipedia.org/wiki/AN/ALE-50_towed_decoy_system) and [AN/ALE-55 fiber-optic towed decoy](https://en.wikipedia.org/wiki/AN/ALE-55_fiber-optic_towed_decoy).
+
+### Naval and undersea decoys: Nulka and Nixie
+
+- Nulka (MK 53) is a rocket-propelled hovering active RF decoy that radiates a large false ship return to seduce anti-ship missiles off the ship. AN/SLQ-25 Nixie is the acoustic analogue: a towed electro-acoustic decoy that lures acoustic/wake-homing torpedoes away from the hull.
+- [MK 53 Decoy Launching System (Nulka)](https://www.navy.mil/Resources/Fact-Files/Display-FactFiles/Article/2167877/mk-53-decoy-launching-system-nulka/) - U.S. Navy.
+- [AN/SLQ-25 Nixie](https://man.fas.org/dod-101/sys/ship/weaps/an-slq-25.htm) - FAS (DoD-101).
+
+### Strategic penetration aids
+
+- At the strategic scale, ICBM reentry vehicles travel with balloon decoys, chaff, replica RVs, IR-signature masking, and anti-simulation (making the warhead look like a decoy). This is the unsolved midcourse **discrimination problem** that drives missile-defense radar and interceptor design.
+- [Countermeasures, Penetration Aids, and Missile Defense](https://missilethreat.csis.org/countermeasures-penetration-aids-and-missile-defense/) - CSIS Missile Threat.
+
+> Full source keys and tiers are in [`references/sources.md`](references/sources.md) under "Signal and Expendable Decoy Hardware".
 
 ## Inflatable and Physical Decoys
 
@@ -420,6 +457,7 @@ Extracted text is available in:
 - [x] Define the top-level taxonomy across time, feature, physical evolution, lifecycle, and additional dimensions.
 - [x] Add historical cases: Operation Fortitude, Desert Storm deception, Kosovo air defense decoys, Gulf War Scud decoys.
 - [x] Add recent-conflict cases the project emphasizes: Nagorno-Karabakh 2020 (SEAD by decoy), Russia-Ukraine HIMARS/aerial decoys, Iran-Israel saturation and penaids (2024-2025), Houthi Red Sea cost-exchange, and offensive decoy reporting.
+- [x] Add the signal/expendable decoy hardware backbone: chaff & flares, ADM-141 TALD/ITALD, ADM-160 MALD/MALD-J, AN/ALE-50 & ALE-55 towed decoys, Nulka, AN/SLQ-25 Nixie, ICBM penaids, and the Bekaa Valley (Mole Cricket 19) SEAD anchor.
 - [x] Add the source-type / provenance dimension and a structured source index (`data/sources.csv`, `docs/source-schema.md`).
 - [x] Add airbase survivability resources: Agile Combat Employment, dispersed operations, hardening vs. deception.
 - [x] Add source-quality tiers and a dedicated source index.

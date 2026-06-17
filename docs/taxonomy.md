@@ -214,6 +214,7 @@ Controlled vocabulary (used in `data/sources.csv`, field `source_type`):
 - `news_media` - 综合新闻媒体与时政杂志 (AP, Reuters, Washington Post, RFE/RL, NBC, Newsweek, Bulletin of the Atomic Scientists).
 - `vendor_industry` - 厂商/产业资料：产品页、目录、市场报告、新闻稿.
 - `analysis_blog` - 独立/个人分析与聚合 (Substack, specialist blogs, republishers).
+- `reference_encyclopedic` - 百科/专家参考汇编 (Wikipedia, designation-systems.net, GlobalSecurity.org).
 - `osint_social` - 一手开源情报与社媒：地理定位影像、卫星图、Telegram/X、战场视频、军事博主.
 - `dataset_database` - 数据集/数据库 (conflict datasets, missile-threat databases, order-of-battle trackers).
 - `institutional_reference` - 博物馆/档案/遗产机构 (Imperial War Museums, English Heritage, national archives).

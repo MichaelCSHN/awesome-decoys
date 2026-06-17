@@ -83,6 +83,7 @@ This project organizes dummy/decoy systems along several dimensions:
 - **Maturity level** - Concept, historical case, prototype, training aid, commercial product, fielded system, combat-observed system, or validated operational effect.
 - **Cost and scalability** - One-off artisanal, unit-built, commercial batch, mass-producible, attritable, reusable, or software-replicable.
 - **Counter-decoy angle** - SAR/IR/radar/EO anomaly detection, pattern-of-life validation, AI classifier robustness, multi-source fusion, cyber fingerprinting, and forensic attribution.
+- **Source type / provenance** - The genre of the knowledge itself: peer-reviewed journals, conference papers, books, think-tank reports, government/military documents, professional military journals, trade defense media, news media, vendor/industry materials, analysis blogs, OSINT/social media, datasets, and institutional references. This axis is orthogonal to the A/B/C/D quality tier and is recorded per source in [`data/sources.csv`](data/sources.csv).
 
 ## Reading Map
 
@@ -395,6 +396,8 @@ The expanded source index is maintained in [`references/sources.md`](references/
 
 When adding a new source, prefer a direct official or primary page first, then add media reporting only when it contributes observations, imagery, dates, or named claims not present in primary material.
 
+A structured, queryable version of the source index — every key classified by `source_type` (journal, conference, book, think-tank, government/military, professional journal, trade media, news, vendor, analysis blog, OSINT/social, dataset, institutional reference) and by `quality_tier` — is maintained in [`data/sources.csv`](data/sources.csv) and documented in [`docs/source-schema.md`](docs/source-schema.md). Source type is orthogonal to quality tier: a vendor page is Tier A for product existence but Tier D for combat effect.
+
 ## Local Seed Documents
 
 These local files are the initial knowledge base for the project:
@@ -417,6 +420,7 @@ Extracted text is available in:
 - [x] Define the top-level taxonomy across time, feature, physical evolution, lifecycle, and additional dimensions.
 - [x] Add historical cases: Operation Fortitude, Desert Storm deception, Kosovo air defense decoys, Gulf War Scud decoys.
 - [x] Add recent-conflict cases the project emphasizes: Nagorno-Karabakh 2020 (SEAD by decoy), Russia-Ukraine HIMARS/aerial decoys, Iran-Israel saturation and penaids (2024-2025), Houthi Red Sea cost-exchange, and offensive decoy reporting.
+- [x] Add the source-type / provenance dimension and a structured source index (`data/sources.csv`, `docs/source-schema.md`).
 - [x] Add airbase survivability resources: Agile Combat Employment, dispersed operations, hardening vs. deception.
 - [x] Add source-quality tiers and a dedicated source index.
 - [ ] Expand pre-modern and ancient deception cases.
@@ -434,11 +438,13 @@ awesome-decoys/
   README.md
   data/
     cases.csv
+    sources.csv
     vendors.csv
     glossary.csv
   docs/
     taxonomy.md
     case-schema.md
+    source-schema.md
     adas.md
     airbase-survivability.md
     cyber-decoys.md

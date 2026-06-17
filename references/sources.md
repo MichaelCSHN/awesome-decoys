@@ -2,6 +2,15 @@
 
 This file maps short source keys used in `data/cases.csv` to public references. The list favors official, institutional, and primary sources, then adds reputable reporting where it contributes case detail, imagery, dates, or product context.
 
+## Two Axes: Source Type and Quality Tier
+
+Every source has two independent attributes:
+
+- **Source type / provenance** (genre): journal, conference paper, book, think-tank report, government/military document, professional military journal, trade defense media, news media, vendor/industry, analysis blog, OSINT/social, dataset, institutional reference, standard/patent. Definitions and Chinese glosses are in [`docs/taxonomy.md`](../docs/taxonomy.md) section 6.
+- **Quality tier** (A/B/C/D): evidentiary weight, which is claim-dependent (see rules below).
+
+The structured, queryable classification of every key below — by `source_type` and `quality_tier` — lives in [`data/sources.csv`](../data/sources.csv), documented in [`docs/source-schema.md`](../docs/source-schema.md). The groupings in *this* file are by topic, for reading; use the CSV to slice by source type.
+
 ## Source Quality Rules
 
 - **A - Primary official / institutional**: doctrine, official military articles, government reports, RAND or equivalent research reports, vendor pages for their own products.

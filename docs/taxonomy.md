@@ -198,6 +198,43 @@ Narrative decoys create false confirmation across sources:
 - Logistics plausibility.
 - Forensic attribution.
 
+### Source Type / Provenance
+
+This dimension classifies **where knowledge about a decoy comes from**, by genre. It is orthogonal to the A/B/C/D quality tier: source *type* describes what an item is; the quality *tier* describes how much evidentiary weight it carries, and for which claim. The same vendor page can be Tier A for "this product exists and is sold" and Tier D for "it defeats SAR in combat."
+
+Controlled vocabulary (used in `data/sources.csv`, field `source_type`):
+
+- `peer_reviewed_journal` - 学术/同行评审期刊.
+- `conference_paper` - 会议论文与论文集 (e.g., AIAA, IEEE Radar, SPIE, NATO STO symposia).
+- `book` - 书籍、专著、官方战史、报告章节.
+- `think_tank_report` - 智库/研究机构报告 (RAND, CSIS, FPRI, IISS, RUSI, CNAS).
+- `gov_military_official` - 政府/军方官方文档：条令、军种院校出版社、CRS/GAO、官方经验总结、国会证词、DIU/DTIC.
+- `military_professional_journal` - 军事专业期刊 (Military Review, Proceedings, Parameters, Joint Force Quarterly, War Room) - institutionally published, practitioner-facing.
+- `trade_defense_media` - 专业国防/航空媒体 (Jane's, The War Zone, Defense News, Breaking Defense, Aviation Week, FlightGlobal, Army Recognition).
+- `news_media` - 综合新闻媒体与时政杂志 (AP, Reuters, Washington Post, RFE/RL, NBC, Newsweek, Bulletin of the Atomic Scientists).
+- `vendor_industry` - 厂商/产业资料：产品页、目录、市场报告、新闻稿.
+- `analysis_blog` - 独立/个人分析与聚合 (Substack, specialist blogs, republishers).
+- `osint_social` - 一手开源情报与社媒：地理定位影像、卫星图、Telegram/X、战场视频、军事博主.
+- `dataset_database` - 数据集/数据库 (conflict datasets, missile-threat databases, order-of-battle trackers).
+- `institutional_reference` - 博物馆/档案/遗产机构 (Imperial War Museums, English Heritage, national archives).
+- `standard_patent_spec` - 标准、专利、技术规范.
+
+Type-to-tier tendencies (defaults only; always refine per claim):
+
+| Source type | Usual tier | Best used for | Watch out for |
+|---|---|---|---|
+| `peer_reviewed_journal` / `book` | A | Theory, methods, validated history | Lag behind current events |
+| `gov_military_official` | A | Doctrine, official lessons, requirements | Disputed BDA, advocacy framing |
+| `think_tank_report` | A | Assessments, force analysis, cost-exchange | Institutional viewpoint |
+| `military_professional_journal` | A/B | Practitioner concepts, campaign analysis | Author opinion vs. official position |
+| `trade_defense_media` | B | Systems detail, named observations, imagery, dates | Specs sometimes from vendor claims |
+| `news_media` | B | Event confirmation, quotes, timelines | Effect claims need corroboration |
+| `vendor_industry` | A for existence / D for effect | Product taxonomy, specs-as-claimed | Performance and combat-effect claims |
+| `analysis_blog` | C | Early framing, leads, niche technical notes | Provenance, single-author bias |
+| `osint_social` | D until verified | Earliest/only signal on recent events | Geolocation, date, manipulation, context |
+
+For decoy research specifically, source type also predicts which **lifecycle stage** an item informs best: peer-reviewed and conference work for design/evaluation; vendor and trade media for production and product taxonomy; news and OSINT for deployment and combat use; doctrine and think-tank work for operational concepts and cost-exchange.
+
 ## 7. Recommended Repository Axes
 
 The project should let a reader enter the knowledge base from several directions:

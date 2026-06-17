@@ -19,6 +19,7 @@
 - [Active and Autonomous Decoys](#active-and-autonomous-decoys)
 - [Electromagnetic and Multi-Spectral Deception](#electromagnetic-and-multi-spectral-deception)
 - [Cyber Decoys (Honeypots, Honeytokens, Deception)](#cyber-decoys-honeypots-honeytokens-deception)
+- [Counter-Decoy and Discrimination](#counter-decoy-and-discrimination)
 - [Aircraft and Airbase Decoys](#aircraft-and-airbase-decoys)
 - [Armored Vehicle and Artillery Decoys](#armored-vehicle-and-artillery-decoys)
 - [Industry and Vendors](#industry-and-vendors)
@@ -286,6 +287,30 @@ The decoy ladder runs by interaction depth: **honeytokens** (single bait data it
 
 Historical anchors: Clifford Stoll's *The Cuckoo's Egg* (1986-87, fake "SDInet" decoy documents), Cheswick's "An Evening with Berferd" (1991), and Fred Cohen's Deception Toolkit (1998). Commercial deception technology has consolidated into platforms such as SentinelOne Singularity Identity (ex-Attivo), Proofpoint Shadow (ex-Illusive), and Zscaler Deception (ex-Smokescreen) — treat vendor effectiveness claims with the same caution as physical-decoy vendors.
 
+## Counter-Decoy and Discrimination
+
+The capstone branch: how decoys are detected and defeated, framed as one arms race between decoy realism and sensor/algorithm discrimination. Full chapter in [`docs/counter-decoy.md`](docs/counter-decoy.md); cases use the `CD-` keys in [`data/cases.csv`](data/cases.csv).
+
+The master principle is **consistency**: a real target is self-consistent across shape, temperature, radar scattering, motion, emissions, supporting activity, and logistics. A decoy is cheap because it fakes some cues and not others, so discrimination is the search for the cue it got wrong or the contradiction between cues.
+
+The throughline across every branch of this project:
+
+| Decoy / penaid | Discriminator that beats it | Decoy response |
+|---|---|---|
+| Chaff | Pulse-Doppler (velocity collapse) | Larger clouds, timing, combine with jamming |
+| Early IR flare | Imaging IR + kinematics | Multi-spectral, kinematic, aircraft-shaped flares |
+| Inflatable vehicle | SAR scattering / polarimetry | Corner reflectors, tuned skins, thermal zones |
+| Static ground decoy | Pattern-of-life over time | Mobility, servicing, emission rhythm (active decoys) |
+| Midcourse balloon decoy | Multi-phenomenology, space sensors, LRDR | Anti-simulation, replica RVs, IR masking |
+| EO-credible decoy | Multi-INT fusion | Add EM/behavioral/narrative layers (story-level) |
+| Honeypot | Fingerprinting / environment checks | Decoy hardening, realistic activity |
+| Any target vs ATR | AI classifier | Adversarial-example decoys (and robust ATR back) |
+
+A note on the AI layer: automated target recognition discriminates decoys at machine speed, but ATR is itself attackable — scatterer-based and physical adversarial perturbations can flip a SAR/EO classifier, and defenses (adversarial training, Bayesian/uncertainty-aware models) trade accuracy, latency, and cost. The decoy can now *be* an adversarial example, so discrimination robustness is its own research front.
+
+- [On the adversarial robustness of aerial detection](https://www.frontiersin.org/journals/computer-science/articles/10.3389/fcomp.2024.1349206/full) - survey of attacks and defenses against aerial/SAR ATR.
+- [Detecting Russian Inflatable Decoys with SAR](https://syntheticapertureradar.com/detecting-russian-inflatable-decoys-with-sar/) - the SAR-scattering discriminator in practice.
+
 ## Aircraft and Airbase Decoys
 
 - [Sea Wolf Global F-35 Jet Fighter Decoy System](https://www.seawolfglobal.com/dni/product_f35.html) - Aircraft-shaped decoy with public performance categories.
@@ -481,7 +506,7 @@ Extracted text is available in:
 - [x] Add source-quality tiers and a dedicated source index.
 - [ ] Expand pre-modern and ancient deception cases.
 - [x] Add cyber deception branch (`docs/cyber-decoys.md`): honeypots, honeytokens/canarytokens, deception platforms, AD/identity decoys, ICS honeypots, MITRE Engage/D3FEND, and honeypot fingerprinting.
-- [ ] Expand counter-decoy resources: SAR detection, AI image recognition, thermal anomaly detection, pattern-of-life analysis.
+- [x] Add the counter-decoy / discrimination branch (`docs/counter-decoy.md`): multi-spectral consistency, SAR/polarimetry, IR & Doppler discrimination, midcourse discrimination, pattern-of-life, AI/ATR adversarial robustness, multi-INT fusion.
 - [ ] Add market and vendor map: Sea Wolf, INFLATECH, Rusbal, i2k, Saab Barracuda, HDT Global, others.
 - [ ] Create a taxonomy figure: static mockup -> inflatable decoy -> multi-spectral decoy -> active/autonomous decoy -> deception network.
 - [x] Create a dedicated section for Autonomous Decoy Aircraft System (ADAS).

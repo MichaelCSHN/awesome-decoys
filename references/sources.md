@@ -81,9 +81,13 @@ The structured, queryable classification of every key below — by `source_type`
 
 ## Counter-Decoy and Detection
 
-- `SAR-DECOY-DETECTION` - [Detecting Russian Inflatable Decoys with SAR](https://syntheticapertureradar.com/detecting-russian-inflatable-decoys-with-sar/), Synthetic Aperture Radar.
-- `RAND-KOSOVO` - [NATO's Air War for Kosovo](https://www.rand.org/content/dam/rand/pubs/monograph_reports/MR1365/RAND_MR1365.pdf), RAND. Useful for BDA and target-validation uncertainty.
-- `USNI-ACE-PROBLEMS` - [Problems for Agile Combat Employment](https://www.usni.org/magazines/proceedings/2024/july/problems-agile-combat-employment), U.S. Naval Institute. Useful for AI/space-sensing pressure on dispersion and deception.
+The discrimination methods that defeat decoys across domains. Full chapter in [`docs/counter-decoy.md`](../docs/counter-decoy.md). This branch also reuses signal/penaid sources listed elsewhere: `MM-COUNTERMEASURES`, `GS-FLARES`, `WIKI-CHAFF` (IR/Doppler discrimination); `CSIS-PENAIDS`, `GS-MIDCOURSE` (midcourse discrimination); `USNI-DECOY-WARFARE-UKRAINE`, `AUP-HIDING-PLAIN-SIGHT` (cross-cue and pattern-of-life).
+
+- `SAR-DECOY-DETECTION` - [Detecting Russian Inflatable Decoys with SAR](https://syntheticapertureradar.com/detecting-russian-inflatable-decoys-with-sar/), Synthetic Aperture Radar. Tier C.
+- `FRONTIERS-AERIAL-ADV` - [On the adversarial robustness of aerial detection](https://www.frontiersin.org/journals/computer-science/articles/10.3389/fcomp.2024.1349206/full), Frontiers in Computer Science (2024). Tier A. (Survey of adversarial attacks/defenses against aerial and SAR ATR.)
+- `ARXIV-SMGAA` - [Scattering Model Guided Adversarial Examples for SAR Target Recognition](https://arxiv.org/abs/2209.04779), arXiv / IEEE TGRS. Tier A/B. (Scatterer-based physical adversarial attacks and robust-training defense.)
+- `RAND-KOSOVO` - [NATO's Air War for Kosovo](https://www.rand.org/content/dam/rand/pubs/monograph_reports/MR1365/RAND_MR1365.pdf), RAND. Tier A. Useful for BDA and target-validation uncertainty.
+- `USNI-ACE-PROBLEMS` - [Problems for Agile Combat Employment](https://www.usni.org/magazines/proceedings/2024/july/problems-agile-combat-employment), U.S. Naval Institute. Tier A/B. Useful for AI/space-sensing pressure on dispersion and deception.
 
 ## Signal and Expendable Decoy Hardware
 

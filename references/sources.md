@@ -228,6 +228,41 @@ The cyber-domain decoy branch — honeypots, honeytokens, deception networks, an
 - `TWZ-LUCAS-HIVEMIND` - [U.S. military's LUCAS kamikaze drone is getting Hivemind swarming capability](https://www.twz.com/air/u-s-militarys-lucas-kamikaze-drone-is-getting-hivemind-swarming-capability), The War Zone. Tier B.
 - `DEFENSEINFO-EPICFURY-LUCAS` - [From Red Sea Defense to Epic Fury: How the U.S. Flipped the Drone Cost Equation](https://defense.info/featured-story/2026/03/from-red-sea-defense-to-epic-fury-how-the-u-s-flipped-the-drone-cost-equation/), Defense.info. Tier C. Single-outlet, recent; corroborate before formal citation.
 
+## Recent Research and Reports (2020-present)
+
+These are higher-leverage sources for the post-2020 literature base: doctrine, think-tank reports, peer-reviewed papers, conference proceedings, surveys, and professional military journals. They complement event reporting in the case sections above.
+
+### Doctrine, think-tank, and professional military reports
+
+- `USMC-MCTP-DECEPTION-2024` - [MCTP 3-32F, Deception](https://www.marines.mil/Portals/1/Publications/MCTP%203-32F%20%28SECURED%29.pdf), U.S. Marine Corps. Tier A. 2024 tactical publication on planning, preparing, executing, and assessing deception.
+- `NEWAMERICA-FUTURE-DECEPTION-2025` - [The Future of Deception in War: Lessons from Ukraine](https://www.newamerica.org/insights/the-future-of-deception-in-war/), New America. Tier A/B. Report by Peter W. Singer and Mick Ryan.
+- `RAND-UKRAINE-FUTURE-US-WARS-2025` - [The Implications of the Fighting in Ukraine for Future U.S.-Involved Wars](https://www.rand.org/content/dam/rand/pubs/research_reports/RRA3100/RRA3141-2/RAND_RRA3141-2.pdf), RAND. Tier A.
+- `RUSI-UKRAINE-OFFENSIVE-2024` - [Preliminary Lessons from Ukraine's Offensive Operations, 2022-23](https://static.rusi.org/lessons-learned-ukraine-offensive-2022-23.pdf), RUSI. Tier A/B.
+- `CSIS-SEVEN-UKRAINE-INSIGHTS-2025` - [Seven Contemporary Insights on the State of the Ukraine War](https://www.csis.org/analysis/seven-contemporary-insights-state-ukraine-war), CSIS. Tier A.
+- `WOTR-NEXTGEN-DECOYS-MARINES-2024` - [Next-Generation Decoys for the Marine Corps](https://warontherocks.com/next-generation-decoys-for-the-marine-corps/), War on the Rocks. Tier B.
+- `MWI-BODYGUARD-LIES-2023` - [Assemble the Bodyguard of Lies](https://mwi.westpoint.edu/assemble-the-bodyguard-of-lies-strengthening-us-military-deception-capabilities/), Modern War Institute / West Point. Tier A/B.
+- `USNI-PRACTICED-DECEPTION-2024` - [Get Practiced at the Art of Deception](https://www.usni.org/magazines/proceedings/2024/august/get-practiced-art-deception), U.S. Naval Institute Proceedings. Tier A/B.
+- `TANDF-MILITARY-MIMICRY-2024` - [Military mimicry: the art of concealment, deception, and imitation](https://www.tandfonline.com/doi/full/10.1080/14751798.2024.2352271), Defence Studies. Tier A.
+- `NATO-STO-CCD-2023` - [CCD (Camouflage Concealment and Deception) proceedings archive](https://www.sto.nato.int/document-tag/ccd-camouflage-concealment-and-deception/), NATO Science and Technology Organization. Tier A/B.
+
+### Cyber deception surveys and evaluation
+
+- `COSE-CYBER-DECEPTION-SURVEY-2024` - [A comprehensive survey on cyber deception techniques to improve honeypot performance](https://doi.org/10.1016/j.cose.2024.103792), Computers & Security. Tier A.
+- `ARXIV-CYBER-DECEPTION-SOTA-2024` - [Cyber Deception: State of the art, Trends, and Open challenges](https://arxiv.org/html/2409.07194v1), arXiv. Tier A/B.
+- `HONEYQUEST-2024` - [Honeyquest](https://arxiv.org/abs/2408.10796), arXiv / ACM AISec. Tier A/B. Measures the enticingness of cyber-deception techniques using code-based questionnaires.
+
+### AI, ATR, and adversarial decoys
+
+- `SAR-ATTACK-SURVEY-2024` - [A Survey of Adversarial Attacks on SAR Target Recognition](https://radars.ac.cn/en/article/doi/10.12000/JR24142), Journal of Radars. Tier A/B.
+- `SAR-PATT-2025` - [SAR-PATT: A Physical Adversarial Attack for SAR Image Automatic Target Recognition](https://www.mdpi.com/2072-4292/17/1/21), Remote Sensing. Tier A.
+- `VISUAL-PHYSICAL-ADV-SURVEY-2025` - [Visual Adversarial Attacks and Defenses in the Physical World](https://arxiv.org/html/2211.01671v6), arXiv. Tier A/B.
+
+### Space and undersea deception
+
+- `SPARTA-CCD-SPACE-2023` - [Camouflage, Concealment, and Decoys (CCD), Technique DE-0009](https://sparta.aerospace.org/technique/DE-0009), SPARTA / Aerospace Corporation. Tier A/B.
+- `USSF-SDA-2023` - [Space Doctrine Publication 3-100, Space Domain Awareness](https://www.starcom.spaceforce.mil/Portals/2/SDP%203-100%20Space%20Domain%20Awareness%20%28November%202023%29_pdf_safe.pdf), U.S. Space Force. Tier A.
+- `CLAUSIUS-ACOUSTIC-DECOYS-2022` - [Study on the Development of Foreign Military Acoustic Decoys](https://www.clausiuspress.com/assets/default/article/2022/11/21/article_1669033832.pdf), Clausius Scientific Press. Tier B.
+
 ## Notes for Future Updates
 
 - Source acquisition gaps are tracked in [`source-wishlist.md`](source-wishlist.md).

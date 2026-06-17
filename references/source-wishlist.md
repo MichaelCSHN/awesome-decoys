@@ -16,6 +16,10 @@ For a case to be considered well-supported:
 - Vendor pages should be used for product existence and claimed specifications, not for validated combat effectiveness.
 - Technical methods should prefer peer-reviewed papers, patents/specifications, official test reports, or military research reports over blog explainers.
 
+## Recent Source Pack Status
+
+The first post-2020 research pack has been added to [`sources.md`](sources.md) under **Recent Research and Reports (2020-present)**. It covers doctrine, Ukraine-focused think-tank reports, professional military articles, cyber-deception surveys, AI/ATR adversarial-decoy work, space-domain deception, and undersea acoustic decoys. Future updates should deepen these clusters rather than add loosely related news coverage.
+
 ## Priority Backlog
 
 | Priority | Area | Current weakness | Source target |

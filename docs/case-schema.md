@@ -23,6 +23,8 @@
 
 ## Recommended Future Fields
 
+> **Status update:** `feature_dimension`, `domain`, and `physical_evolution` are now populated for every row in `data/cases.csv` (appended after `notes`), using the controlled vocabularies below, and the case explorer (`assets/cases-explorer.html`) facets on them. The remaining fields below stay aspirational.
+
 Add these fields when the database becomes large enough to need filtering and analysis:
 
 | Field | Meaning | Example Values |

@@ -132,6 +132,8 @@ Core fields:
 - `source_quality` - A/B/C/D source tier as defined below.
 - `source_refs` - Short source keys mapped in [`references/sources.md`](references/sources.md).
 
+Every row also carries `feature_dimension` (physical/signal/behavioral/cyber/narrative/mixed), `domain` (land/air/sea/space/ems/cyber/information/cross_domain), and `physical_evolution` (classic/mechanical/informationized/intelligent) — the axes the case explorer filters on.
+
 Initial cases:
 
 | Case | Period | Focus | Why It Matters |

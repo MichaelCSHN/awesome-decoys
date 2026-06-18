@@ -139,6 +139,8 @@
 
 每行还包含 `feature_dimension`（physical/signal/behavioral/cyber/narrative/mixed）、`domain`（land/air/sea/space/ems/cyber/information/cross_domain）和 `physical_evolution`（classic/mechanical/informationized/intelligent），这些是案例浏览器的筛选轴。
 
+Claim 级证据记录在 [`data/claims.csv`](data/claims.csv)。当一个案例包含多个应分开判断的说法时使用它，例如产品存在、部署报道、诱饵效果、成本交换、战果数字和争议性 BDA，避免把它们混用同一个置信度。
+
 初始案例：
 
 | 案例 | 时间 | 重点 | 为什么重要 |
@@ -176,6 +178,7 @@
 - [README.zh-CN.md](README.zh-CN.md) - 中文项目首页。
 - [docs/taxonomy.zh-CN.md](docs/taxonomy.zh-CN.md) - 中文分类体系。
 - [docs/case-schema.zh-CN.md](docs/case-schema.zh-CN.md) - 中文案例 schema。
+- [docs/claim-schema.zh-CN.md](docs/claim-schema.zh-CN.md) - 中文 claim 级证据 schema。
 - [docs/source-schema.zh-CN.md](docs/source-schema.zh-CN.md) - 中文来源 schema。
 - [docs/cyber-decoys.zh-CN.md](docs/cyber-decoys.zh-CN.md) - 中文网络诱饵指南。
 - [docs/counter-decoy.zh-CN.md](docs/counter-decoy.zh-CN.md) - 中文反诱饵指南。
@@ -553,6 +556,7 @@ awesome-decoys/
     README.md
     README.zh-CN.md
     cases.csv
+    claims.csv
     sources.csv
     vendors.csv
     glossary.csv
@@ -561,6 +565,8 @@ awesome-decoys/
     taxonomy.zh-CN.md
     case-schema.md
     case-schema.zh-CN.md
+    claim-schema.md
+    claim-schema.zh-CN.md
     source-schema.md
     source-schema.zh-CN.md
     adas.md

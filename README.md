@@ -139,6 +139,8 @@ Core fields:
 
 Every row also carries `feature_dimension` (physical/signal/behavioral/cyber/narrative/mixed), `domain` (land/air/sea/space/ems/cyber/information/cross_domain), and `physical_evolution` (classic/mechanical/informationized/intelligent) — the axes the case explorer filters on.
 
+Claim-level evidence is tracked in [`data/claims.csv`](data/claims.csv). Use it when a case contains several separable statements — for example product existence, deployment, effect, cost-exchange, and contested battle-damage claims — that should not share the same confidence level.
+
 Initial cases:
 
 | Case | Period | Focus | Why It Matters |
@@ -176,6 +178,7 @@ The project now has a parallel Chinese edition for core entry points and topic g
 - [README.zh-CN.md](README.zh-CN.md) - Chinese project homepage.
 - [docs/taxonomy.zh-CN.md](docs/taxonomy.zh-CN.md) - Chinese taxonomy.
 - [docs/case-schema.zh-CN.md](docs/case-schema.zh-CN.md) - Chinese case schema.
+- [docs/claim-schema.zh-CN.md](docs/claim-schema.zh-CN.md) - Chinese claim-evidence schema.
 - [docs/source-schema.zh-CN.md](docs/source-schema.zh-CN.md) - Chinese source schema.
 - [docs/cyber-decoys.zh-CN.md](docs/cyber-decoys.zh-CN.md) - Chinese cyber decoy guide.
 - [docs/counter-decoy.zh-CN.md](docs/counter-decoy.zh-CN.md) - Chinese counter-decoy guide.
@@ -562,6 +565,7 @@ awesome-decoys/
     README.md
     README.zh-CN.md
     cases.csv
+    claims.csv
     sources.csv
     vendors.csv
     glossary.csv
@@ -570,6 +574,8 @@ awesome-decoys/
     taxonomy.zh-CN.md
     case-schema.md
     case-schema.zh-CN.md
+    claim-schema.md
+    claim-schema.zh-CN.md
     source-schema.md
     source-schema.zh-CN.md
     adas.md

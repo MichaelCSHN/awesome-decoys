@@ -12,6 +12,30 @@ from collections import Counter
 
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
+CASE_FEATURES = {"physical", "signal", "behavioral", "cyber", "narrative", "mixed"}
+CASE_DOMAINS = {"land", "air", "sea", "space", "ems", "cyber", "information", "cross_domain"}
+CASE_GENERATIONS = {"classic", "mechanical", "informationized", "intelligent"}
+QUALITY_TIERS = {"A", "A/B", "B", "B/C", "C", "D"}
+CLAIM_TYPES = {"existence", "deployment", "effect", "mechanism", "cost_exchange", "technical", "context", "uncertainty"}
+CLAIM_CONFIDENCE = {"confirmed", "corroborated", "reported", "provisional", "contested"}
+SOURCE_TYPES = {
+    "peer_reviewed_journal",
+    "conference_paper",
+    "book",
+    "think_tank_report",
+    "gov_military_official",
+    "military_professional_journal",
+    "trade_defense_media",
+    "news_media",
+    "vendor_industry",
+    "analysis_blog",
+    "reference_encyclopedic",
+    "software_repo",
+    "osint_social",
+    "dataset_database",
+    "institutional_reference",
+    "standard_patent_spec",
+}
 
 
 def read_csv(rel: str) -> list[dict[str, str]]:
@@ -46,12 +70,54 @@ def check_case_sources(cases: list[dict[str, str]], sources: list[dict[str, str]
                 fail(errors, f"data/cases.csv: {row['case_id']} references missing source key {key}")
 
 
+def split_refs(value: str) -> list[str]:
+    return [part.strip() for part in value.split(";") if part.strip()]
+
+
+def check_controlled_values(
+    cases: list[dict[str, str]], sources: list[dict[str, str]], claims: list[dict[str, str]], errors: list[str]
+) -> None:
+    checks = [
+        ("data/cases.csv", cases, "source_quality", QUALITY_TIERS),
+        ("data/cases.csv", cases, "feature_dimension", CASE_FEATURES),
+        ("data/cases.csv", cases, "domain", CASE_DOMAINS),
+        ("data/cases.csv", cases, "physical_evolution", CASE_GENERATIONS),
+        ("data/sources.csv", sources, "source_type", SOURCE_TYPES),
+        ("data/sources.csv", sources, "quality_tier", QUALITY_TIERS),
+        ("data/claims.csv", claims, "claim_type", CLAIM_TYPES),
+        ("data/claims.csv", claims, "confidence", CLAIM_CONFIDENCE),
+    ]
+    for rel, rows, field, allowed in checks:
+        for idx, row in enumerate(rows, start=2):
+            value = row.get(field, "").strip()
+            if value not in allowed:
+                fail(errors, f"{rel}: invalid {field}={value!r} at CSV line {idx}")
+
+
+def check_claims(
+    claims: list[dict[str, str]], cases: list[dict[str, str]], sources: list[dict[str, str]], errors: list[str]
+) -> None:
+    case_ids = {row["case_id"].strip() for row in cases}
+    source_keys = {row["source_key"].strip() for row in sources}
+    for row in claims:
+        claim_id = row.get("claim_id", "").strip()
+        case_id = row.get("case_id", "").strip()
+        if case_id not in case_ids:
+            fail(errors, f"data/claims.csv: {claim_id} references missing case_id {case_id}")
+        refs = split_refs(row.get("source_refs", ""))
+        if not refs:
+            fail(errors, f"data/claims.csv: {claim_id} has no source_refs")
+        for key in refs:
+            if key not in source_keys:
+                fail(errors, f"data/claims.csv: {claim_id} references missing source key {key}")
+
+
 def check_source_quality_warnings(
     cases: list[dict[str, str]], sources: list[dict[str, str]], warnings: list[str]
 ) -> None:
     source_by_key = {row["source_key"].strip(): row for row in sources}
     for row in cases:
-        refs = [part.strip() for part in row.get("source_refs", "").split(";") if part.strip()]
+        refs = split_refs(row.get("source_refs", ""))
         if len(refs) < 2:
             warn(warnings, f"data/cases.csv: {row['case_id']} has fewer than 2 source_refs")
         tiers = [source_by_key.get(ref, {}).get("quality_tier", "").strip() for ref in refs]
@@ -64,6 +130,13 @@ def check_source_quality_warnings(
             warn(warnings, f"data/sources.csv: {key} has a blank url")
         if row.get("notes", "").strip().upper().startswith("STUB:"):
             warn(warnings, f"data/sources.csv: {key} is still marked STUB")
+    duplicate_urls = [
+        url
+        for url, count in Counter(row.get("url", "").strip() for row in sources if row.get("url", "").strip()).items()
+        if count > 1
+    ]
+    for url in duplicate_urls:
+        warn(warnings, f"data/sources.csv: duplicate url {url}")
 
 
 def check_sources_markdown(sources: list[dict[str, str]], errors: list[str]) -> None:
@@ -71,8 +144,32 @@ def check_sources_markdown(sources: list[dict[str, str]], errors: list[str]) -> 
     md_keys = set(re.findall(r"^- `([^`]+)` -", text, flags=re.MULTILINE))
     csv_keys = {row["source_key"].strip() for row in sources}
     missing_in_csv = sorted(md_keys - csv_keys)
+    missing_in_md = sorted(csv_keys - md_keys)
     if missing_in_csv:
         fail(errors, f"references/sources.md: keys missing from data/sources.csv: {missing_in_csv}")
+    if missing_in_md:
+        fail(errors, f"data/sources.csv: keys missing from references/sources.md: {missing_in_md}")
+
+
+def check_text_encoding(errors: list[str], warnings: list[str]) -> None:
+    files = [
+        *ROOT.glob("*.md"),
+        *ROOT.glob("docs/*.md"),
+        *ROOT.glob("references/*.md"),
+        *ROOT.glob("data/*.md"),
+        *ROOT.glob("data/*.csv"),
+    ]
+    mojibake_markers = ["涓", "绋", "鏉", "妗", "鐩", "鎺", "鍙", "瀛", "璇", "缁"]
+    for path in files:
+        rel = path.relative_to(ROOT).as_posix()
+        text = path.read_text(encoding="utf-8", errors="replace")
+        if "\ufffd" in text:
+            fail(errors, f"{rel}: contains Unicode replacement character")
+        if re.search(r"\?{4,}", text):
+            fail(errors, f"{rel}: contains runs of literal question marks, possible encoding loss")
+        marker_count = sum(text.count(marker) for marker in mojibake_markers)
+        if marker_count >= 5:
+            warn(warnings, f"{rel}: contains {marker_count} common mojibake markers; inspect encoding/content")
 
 
 def check_local_links(errors: list[str]) -> None:
@@ -131,13 +228,18 @@ def main() -> int:
     cases = read_csv("data/cases.csv")
     sources = read_csv("data/sources.csv")
     vendors = read_csv("data/vendors.csv")
+    claims = read_csv("data/claims.csv")
 
     check_unique(cases, "case_id", "data/cases.csv", errors)
     check_unique(sources, "source_key", "data/sources.csv", errors)
     check_unique(vendors, "vendor_key", "data/vendors.csv", errors)
+    check_unique(claims, "claim_id", "data/claims.csv", errors)
+    check_controlled_values(cases, sources, claims, errors)
     check_case_sources(cases, sources, errors)
+    check_claims(claims, cases, sources, errors)
     check_source_quality_warnings(cases, sources, warnings)
     check_sources_markdown(sources, errors)
+    check_text_encoding(errors, warnings)
     check_local_links(errors)
     check_case_explorer(cases, errors)
 
@@ -154,7 +256,7 @@ def main() -> int:
 
     print(
         "Validation passed: "
-        f"{len(cases)} cases, {len(sources)} sources, {len(vendors)} vendors."
+        f"{len(cases)} cases, {len(claims)} claims, {len(sources)} sources, {len(vendors)} vendors."
     )
     return 0
 

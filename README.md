@@ -184,6 +184,8 @@ The project now has a parallel Chinese edition for core entry points and topic g
 - [docs/counter-decoy.zh-CN.md](docs/counter-decoy.zh-CN.md) - Chinese counter-decoy guide.
 - [docs/adas.zh-CN.md](docs/adas.zh-CN.md) - Chinese ADAS guide.
 - [docs/vendors.zh-CN.md](docs/vendors.zh-CN.md) - Chinese vendor map.
+- [docs/review-paper.zh-CN.md](docs/review-paper.zh-CN.md) - Chinese review-paper draft based on the repository.
+- [docs/project-proposal.zh-CN.md](docs/project-proposal.zh-CN.md) - Chinese R&D project proposal draft.
 - [data/README.zh-CN.md](data/README.zh-CN.md) - Chinese data-file guide.
 - [CONTRIBUTING.zh-CN.md](CONTRIBUTING.zh-CN.md) - Chinese contribution guide.
 
@@ -587,6 +589,8 @@ awesome-decoys/
     cyber-decoys.zh-CN.md
     counter-decoy.md
     counter-decoy.zh-CN.md
+    review-paper.zh-CN.md
+    project-proposal.zh-CN.md
   references/
     doctrine.md
     modern-conflicts.md

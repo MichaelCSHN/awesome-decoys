@@ -34,6 +34,7 @@ Contributions should improve the encyclopedia without weakening source traceabil
 Run:
 
 ```bash
+python scripts/build_explorer.py --check
 python scripts/validate.py
 ```
 

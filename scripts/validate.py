@@ -112,6 +112,15 @@ def check_claims(
                 fail(errors, f"data/claims.csv: {claim_id} references missing source key {key}")
 
 
+def check_claim_coverage_warnings(
+    cases: list[dict[str, str]], claims: list[dict[str, str]], warnings: list[str]
+) -> None:
+    claim_counts = Counter(row.get("case_id", "").strip() for row in claims)
+    uncovered = [row["case_id"].strip() for row in cases if claim_counts[row["case_id"].strip()] == 0]
+    if uncovered:
+        warn(warnings, f"data/claims.csv: {len(uncovered)} cases have no claim rows: {uncovered}")
+
+
 def check_source_quality_warnings(
     cases: list[dict[str, str]], sources: list[dict[str, str]], warnings: list[str]
 ) -> None:
@@ -159,12 +168,21 @@ def check_text_encoding(errors: list[str], warnings: list[str]) -> None:
         *ROOT.glob("data/*.md"),
         *ROOT.glob("data/*.csv"),
     ]
-    mojibake_markers = ["涓", "绋", "鏉", "妗", "鐩", "鎺", "鍙", "瀛", "璇", "缁"]
+    mojibake_markers = [
+        "\u00e4\u00b8\u00ad",  # "中" after UTF-8 bytes were read as Windows-1252/Latin-1.
+        "\u00e6\u2013\u2021",  # "文" after the same failure mode.
+        "\u00e2\u20ac\u201d",  # em dash rendered as mojibake.
+        "\u00e2\u20ac\u2122",  # apostrophe rendered as mojibake.
+        "\u00c3\u00a9",
+        "\u00c2\u00a0",
+    ]
     for path in files:
         rel = path.relative_to(ROOT).as_posix()
         text = path.read_text(encoding="utf-8", errors="replace")
         if "\ufffd" in text:
             fail(errors, f"{rel}: contains Unicode replacement character")
+        if re.search(r"[\ue000-\uf8ff]", text):
+            fail(errors, f"{rel}: contains private-use characters, possible encoding damage")
         if re.search(r"\?{4,}", text):
             fail(errors, f"{rel}: contains runs of literal question marks, possible encoding loss")
         marker_count = sum(text.count(marker) for marker in mojibake_markers)
@@ -237,6 +255,7 @@ def main() -> int:
     check_controlled_values(cases, sources, claims, errors)
     check_case_sources(cases, sources, errors)
     check_claims(claims, cases, sources, errors)
+    check_claim_coverage_warnings(cases, claims, warnings)
     check_source_quality_warnings(cases, sources, warnings)
     check_sources_markdown(sources, errors)
     check_text_encoding(errors, warnings)

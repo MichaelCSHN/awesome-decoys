@@ -34,6 +34,7 @@
 运行：
 
 ```bash
+python scripts/build_explorer.py --check
 python scripts/validate.py
 ```
 

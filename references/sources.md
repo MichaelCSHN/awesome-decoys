@@ -41,7 +41,7 @@ The structured, queryable classification of every key below — by `source_type`
 - `ATLASOBSCURA-GHOST` - [A Visual Guide to the Ghost Army](https://www.atlasobscura.com/articles/wwii-ghost-army), Atlas Obscura. Tier C. (Also Starfish sites and dummy airfields.)
 - `COLLECTOR-GHOST` - [The Ghost Army: Masters of Deception in WWII](https://www.thecollector.com/ghost-army-masters-deception-wwii/), TheCollector. Tier C. (Also Starfish and Operation Mincemeat.)
 - `TNA-MINCEMEAT` - [Operation MINCEMEAT: copies of documents made available to press](https://discovery.nationalarchives.gov.uk/details/r/C4420701), The National Archives. Tier A. Archive catalogue record; item may require onsite access.
-- `IWM-MINCEMEAT` - [What Was Operation Mincemeat?](https://www.iwm.org.uk/history/what-was-operation-mincemeat), Imperial War Museums. Tier A. Institutional overview; some automated clients may be blocked.
+- `IWM-MINCEMEAT` - [What Was Operation Mincemeat During World War 2](https://www.iwm.org.uk/history/second-world-war/intelligence/the-war-on-paper-operation-mincemeat), Imperial War Museums. Tier A. Institutional overview in IWM's intelligence collection.
 
 - `IWM-FORTITUDE` - [D-Day Deception: Parachuting Dummies and Inflatable Tanks](https://www.iwm.org.uk/history/second-world-war/d-day/parachuting-dummies-and-inflatable-tanks), Imperial War Museums.
 - `ENGLISH-HERITAGE-FORTITUDE` - [D-Day Deception: Operation Fortitude South](https://www.english-heritage.org.uk/visit/places/dover-castle/history-and-stories/d-day-deception/), English Heritage.
@@ -182,7 +182,7 @@ The cyber-domain decoy branch — honeypots, honeytokens, deception networks, an
 ### Historical
 
 - `STOLL-WILY-HACKER` - [Stalking the wily hacker](https://dl.acm.org/doi/10.1145/66093.66095), Communications of the ACM. Tier A. Clifford Stoll's contemporary account of the Lawrence Berkeley Lab intrusion investigation.
-- `SPRINGER-CUCKOO` - [The Cuckoo's Egg: Tracking a Spy Through the Maze of Computer Espionage](https://link.springer.com/book/10.1007/978-1-4419-9953-7), Springer. Tier A. Book source for the SDInet decoy-documents account.
+- `BOOK-CUCKOO` - [The Cuckoo's Egg: Tracking a Spy Through the Maze of Computer Espionage](https://www.simonandschuster.com/books/The-Cuckoos-Egg/Cliff-Stoll/9781668048160), Simon & Schuster. Tier A. Official publisher page for the current trade paperback; use Stoll's CACM article and the book for SDInet decoy-document specifics.
 - `WIKI-CUCKOO` - [The Cuckoo's Egg](https://en.wikipedia.org/wiki/The_Cuckoo%27s_Egg_(book)), Wikipedia. Tier C. (Clifford Stoll, 1989; SDInet decoy documents.)
 
 ## Recent Conflict Decoy and Saturation Cases (2020-2026)
